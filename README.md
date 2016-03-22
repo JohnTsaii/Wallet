@@ -1,2 +1,2 @@
 # Wallet
-This is aWallet Application
+This is a wallet Application
