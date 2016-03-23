@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52089B8C1CA1808000C1E6D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089B8B1CA1808000C1E6D6 /* main.m */; };
-		52089B8F1CA1808000C1E6D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089B8E1CA1808000C1E6D6 /* AppDelegate.m */; };
-		52089B921CA1808000C1E6D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089B911CA1808000C1E6D6 /* ViewController.m */; };
 		52089B951CA1808000C1E6D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52089B931CA1808000C1E6D6 /* Main.storyboard */; };
 		52089B971CA1808000C1E6D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52089B961CA1808000C1E6D6 /* Assets.xcassets */; };
 		52089B9A1CA1808000C1E6D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52089B981CA1808000C1E6D6 /* LaunchScreen.storyboard */; };
 		52089BA51CA1808000C1E6D6 /* WalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BA41CA1808000C1E6D6 /* WalletTests.m */; };
+		68FBCA6D1CA2DEB300BCD485 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA691CA2DEB300BCD485 /* AppDelegate.m */; };
+		68FBCA6E1CA2DEB300BCD485 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA6A1CA2DEB300BCD485 /* main.m */; };
+		68FBCA6F1CA2DEB300BCD485 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA6C1CA2DEB300BCD485 /* ViewController.m */; };
+		68FBCA711CA2DECD00BCD485 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68FBCA701CA2DECD00BCD485 /* Info.plist */; };
 		783EEE3BC8ABBA8D7E5F7B84 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8BA0962AC8EDF3458A17A9 /* libPods.a */; };
 		E9637E24419357C8CD65F1DF /* libPods-Wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5894D8F429867757ABAADA29 /* libPods-Wallet.a */; };
 /* End PBXBuildFile section */
@@ -31,20 +32,20 @@
 /* Begin PBXFileReference section */
 		4FD3B3F1786041816FA1E288 /* Pods-Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wallet/Pods-Wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		52089B871CA1808000C1E6D6 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		52089B8B1CA1808000C1E6D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		52089B8D1CA1808000C1E6D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		52089B8E1CA1808000C1E6D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		52089B901CA1808000C1E6D6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		52089B911CA1808000C1E6D6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		52089B941CA1808000C1E6D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52089B961CA1808000C1E6D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52089B991CA1808000C1E6D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		52089B9B1CA1808000C1E6D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52089BA01CA1808000C1E6D6 /* WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52089BA41CA1808000C1E6D6 /* WalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletTests.m; sourceTree = "<group>"; };
 		52089BA61CA1808000C1E6D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5894D8F429867757ABAADA29 /* libPods-Wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8BA0962AC8EDF3458A17A9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		68FBCA681CA2DEB300BCD485 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		68FBCA691CA2DEB300BCD485 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		68FBCA6A1CA2DEB300BCD485 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68FBCA6B1CA2DEB300BCD485 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		68FBCA6C1CA2DEB300BCD485 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		68FBCA701CA2DECD00BCD485 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1B86851D960D3BFA2502839 /* Pods-Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wallet/Pods-Wallet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,25 +101,12 @@
 		52089B891CA1808000C1E6D6 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
-				52089B8D1CA1808000C1E6D6 /* AppDelegate.h */,
-				52089B8E1CA1808000C1E6D6 /* AppDelegate.m */,
-				52089B901CA1808000C1E6D6 /* ViewController.h */,
-				52089B911CA1808000C1E6D6 /* ViewController.m */,
+				68FBCA671CA2DEB300BCD485 /* Main */,
 				52089B931CA1808000C1E6D6 /* Main.storyboard */,
 				52089B961CA1808000C1E6D6 /* Assets.xcassets */,
 				52089B981CA1808000C1E6D6 /* LaunchScreen.storyboard */,
-				52089B9B1CA1808000C1E6D6 /* Info.plist */,
-				52089B8A1CA1808000C1E6D6 /* Supporting Files */,
 			);
 			path = Wallet;
-			sourceTree = "<group>";
-		};
-		52089B8A1CA1808000C1E6D6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				52089B8B1CA1808000C1E6D6 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		52089BA31CA1808000C1E6D6 /* WalletTests */ = {
@@ -128,6 +116,19 @@
 				52089BA61CA1808000C1E6D6 /* Info.plist */,
 			);
 			path = WalletTests;
+			sourceTree = "<group>";
+		};
+		68FBCA671CA2DEB300BCD485 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				68FBCA701CA2DECD00BCD485 /* Info.plist */,
+				68FBCA681CA2DEB300BCD485 /* AppDelegate.h */,
+				68FBCA691CA2DEB300BCD485 /* AppDelegate.m */,
+				68FBCA6A1CA2DEB300BCD485 /* main.m */,
+				68FBCA6B1CA2DEB300BCD485 /* ViewController.h */,
+				68FBCA6C1CA2DEB300BCD485 /* ViewController.m */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		78616B9D3EC254A0CE1E86DA /* Pods */ = {
@@ -222,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68FBCA711CA2DECD00BCD485 /* Info.plist in Resources */,
 				52089B9A1CA1808000C1E6D6 /* LaunchScreen.storyboard in Resources */,
 				52089B971CA1808000C1E6D6 /* Assets.xcassets in Resources */,
 				52089B951CA1808000C1E6D6 /* Main.storyboard in Resources */,
@@ -290,9 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52089B921CA1808000C1E6D6 /* ViewController.m in Sources */,
-				52089B8F1CA1808000C1E6D6 /* AppDelegate.m in Sources */,
-				52089B8C1CA1808000C1E6D6 /* main.m in Sources */,
+				68FBCA6F1CA2DEB300BCD485 /* ViewController.m in Sources */,
+				68FBCA6E1CA2DEB300BCD485 /* main.m in Sources */,
+				68FBCA6D1CA2DEB300BCD485 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +421,7 @@
 			baseConfigurationReference = 4FD3B3F1786041816FA1E288 /* Pods-Wallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Wallet/Info.plist;
+				INFOPLIST_FILE = Wallet/Main/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JohnTsai.Wallet;
@@ -432,7 +434,7 @@
 			baseConfigurationReference = D1B86851D960D3BFA2502839 /* Pods-Wallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Wallet/Info.plist;
+				INFOPLIST_FILE = Wallet/Main/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JohnTsai.Wallet;
