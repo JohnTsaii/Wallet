@@ -11,6 +11,10 @@
 		52089B971CA1808000C1E6D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52089B961CA1808000C1E6D6 /* Assets.xcassets */; };
 		52089B9A1CA1808000C1E6D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52089B981CA1808000C1E6D6 /* LaunchScreen.storyboard */; };
 		52089BA51CA1808000C1E6D6 /* WalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BA41CA1808000C1E6D6 /* WalletTests.m */; };
+		52089BDD1CA2E5D000C1E6D6 /* WTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BDC1CA2E5D000C1E6D6 /* WTMainViewController.m */; settings = {ASSET_TAGS = (); }; };
+		52089BF21CA2E70100C1E6D6 /* WTChartViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BF11CA2E70100C1E6D6 /* WTChartViewControler.m */; settings = {ASSET_TAGS = (); }; };
+		52089BF51CA2E70F00C1E6D6 /* WTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BF41CA2E70F00C1E6D6 /* WTHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		52089BF81CA2E72200C1E6D6 /* WTPersoanlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BF71CA2E72200C1E6D6 /* WTPersoanlViewController.m */; settings = {ASSET_TAGS = (); }; };
 		68FBCA6D1CA2DEB300BCD485 /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA691CA2DEB300BCD485 /* WTAppDelegate.m */; };
 		68FBCA6E1CA2DEB300BCD485 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA6A1CA2DEB300BCD485 /* main.m */; };
 		68FBCA6F1CA2DEB300BCD485 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA6C1CA2DEB300BCD485 /* ViewController.m */; };
@@ -38,6 +42,14 @@
 		52089BA01CA1808000C1E6D6 /* WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52089BA41CA1808000C1E6D6 /* WalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletTests.m; sourceTree = "<group>"; };
 		52089BA61CA1808000C1E6D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52089BDB1CA2E5D000C1E6D6 /* WTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMainViewController.h; sourceTree = "<group>"; };
+		52089BDC1CA2E5D000C1E6D6 /* WTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMainViewController.m; sourceTree = "<group>"; };
+		52089BF01CA2E70100C1E6D6 /* WTChartViewControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTChartViewControler.h; sourceTree = "<group>"; };
+		52089BF11CA2E70100C1E6D6 /* WTChartViewControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTChartViewControler.m; sourceTree = "<group>"; };
+		52089BF31CA2E70F00C1E6D6 /* WTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTHomeViewController.h; sourceTree = "<group>"; };
+		52089BF41CA2E70F00C1E6D6 /* WTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTHomeViewController.m; sourceTree = "<group>"; };
+		52089BF61CA2E72200C1E6D6 /* WTPersoanlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTPersoanlViewController.h; sourceTree = "<group>"; };
+		52089BF71CA2E72200C1E6D6 /* WTPersoanlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTPersoanlViewController.m; sourceTree = "<group>"; };
 		5894D8F429867757ABAADA29 /* libPods-Wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8BA0962AC8EDF3458A17A9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FBCA681CA2DEB300BCD485 /* WTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAppDelegate.h; sourceTree = "<group>"; };
@@ -139,6 +151,9 @@
 		52089BD91CA2E56000C1E6D6 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				52089BDE1CA2E62900C1E6D6 /* Chart */,
+				52089BDF1CA2E62900C1E6D6 /* Home */,
+				52089BE01CA2E62900C1E6D6 /* Personal */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -150,12 +165,161 @@
 			path = Kits;
 			sourceTree = "<group>";
 		};
+		52089BDE1CA2E62900C1E6D6 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				52089BE11CA2E69D00C1E6D6 /* Cache */,
+				52089BE21CA2E69D00C1E6D6 /* Defines */,
+				52089BE31CA2E69D00C1E6D6 /* Model */,
+				52089BE41CA2E69D00C1E6D6 /* View */,
+				52089BE51CA2E69D00C1E6D6 /* ViewController */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		52089BDF1CA2E62900C1E6D6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				52089BE61CA2E6BF00C1E6D6 /* Cache */,
+				52089BE71CA2E6BF00C1E6D6 /* Defines */,
+				52089BE81CA2E6BF00C1E6D6 /* Model */,
+				52089BE91CA2E6BF00C1E6D6 /* View */,
+				52089BEA1CA2E6BF00C1E6D6 /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		52089BE01CA2E62900C1E6D6 /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				52089BEB1CA2E6D100C1E6D6 /* Cache */,
+				52089BEC1CA2E6D100C1E6D6 /* Defines */,
+				52089BED1CA2E6D100C1E6D6 /* Model */,
+				52089BEE1CA2E6D100C1E6D6 /* View */,
+				52089BEF1CA2E6D100C1E6D6 /* ViewController */,
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
+		52089BE11CA2E69D00C1E6D6 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		52089BE21CA2E69D00C1E6D6 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		52089BE31CA2E69D00C1E6D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52089BE41CA2E69D00C1E6D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52089BE51CA2E69D00C1E6D6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				52089BF01CA2E70100C1E6D6 /* WTChartViewControler.h */,
+				52089BF11CA2E70100C1E6D6 /* WTChartViewControler.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		52089BE61CA2E6BF00C1E6D6 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		52089BE71CA2E6BF00C1E6D6 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		52089BE81CA2E6BF00C1E6D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52089BE91CA2E6BF00C1E6D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52089BEA1CA2E6BF00C1E6D6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				52089BF31CA2E70F00C1E6D6 /* WTHomeViewController.h */,
+				52089BF41CA2E70F00C1E6D6 /* WTHomeViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		52089BEB1CA2E6D100C1E6D6 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		52089BEC1CA2E6D100C1E6D6 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		52089BED1CA2E6D100C1E6D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52089BEE1CA2E6D100C1E6D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52089BEF1CA2E6D100C1E6D6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				52089BF61CA2E72200C1E6D6 /* WTPersoanlViewController.h */,
+				52089BF71CA2E72200C1E6D6 /* WTPersoanlViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		68FBCA671CA2DEB300BCD485 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				68FBCA701CA2DECD00BCD485 /* Info.plist */,
 				68FBCA681CA2DEB300BCD485 /* WTAppDelegate.h */,
 				68FBCA691CA2DEB300BCD485 /* WTAppDelegate.m */,
+				52089BDB1CA2E5D000C1E6D6 /* WTMainViewController.h */,
+				52089BDC1CA2E5D000C1E6D6 /* WTMainViewController.m */,
 				68FBCA6A1CA2DEB300BCD485 /* main.m */,
 				68FBCA6B1CA2DEB300BCD485 /* ViewController.h */,
 				68FBCA6C1CA2DEB300BCD485 /* ViewController.m */,
@@ -324,6 +488,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52089BF51CA2E70F00C1E6D6 /* WTHomeViewController.m in Sources */,
+				52089BF81CA2E72200C1E6D6 /* WTPersoanlViewController.m in Sources */,
+				52089BDD1CA2E5D000C1E6D6 /* WTMainViewController.m in Sources */,
+				52089BF21CA2E70100C1E6D6 /* WTChartViewControler.m in Sources */,
 				68FBCA6F1CA2DEB300BCD485 /* ViewController.m in Sources */,
 				68FBCA6E1CA2DEB300BCD485 /* main.m in Sources */,
 				68FBCA6D1CA2DEB300BCD485 /* WTAppDelegate.m in Sources */,
