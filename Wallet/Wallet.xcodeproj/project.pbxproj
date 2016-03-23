@@ -11,7 +11,7 @@
 		52089B971CA1808000C1E6D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52089B961CA1808000C1E6D6 /* Assets.xcassets */; };
 		52089B9A1CA1808000C1E6D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52089B981CA1808000C1E6D6 /* LaunchScreen.storyboard */; };
 		52089BA51CA1808000C1E6D6 /* WalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BA41CA1808000C1E6D6 /* WalletTests.m */; };
-		68FBCA6D1CA2DEB300BCD485 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA691CA2DEB300BCD485 /* AppDelegate.m */; };
+		68FBCA6D1CA2DEB300BCD485 /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA691CA2DEB300BCD485 /* WTAppDelegate.m */; };
 		68FBCA6E1CA2DEB300BCD485 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA6A1CA2DEB300BCD485 /* main.m */; };
 		68FBCA6F1CA2DEB300BCD485 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA6C1CA2DEB300BCD485 /* ViewController.m */; };
 		68FBCA711CA2DECD00BCD485 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68FBCA701CA2DECD00BCD485 /* Info.plist */; };
@@ -40,8 +40,8 @@
 		52089BA61CA1808000C1E6D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5894D8F429867757ABAADA29 /* libPods-Wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8BA0962AC8EDF3458A17A9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		68FBCA681CA2DEB300BCD485 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		68FBCA691CA2DEB300BCD485 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		68FBCA681CA2DEB300BCD485 /* WTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAppDelegate.h; sourceTree = "<group>"; };
+		68FBCA691CA2DEB300BCD485 /* WTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAppDelegate.m; sourceTree = "<group>"; };
 		68FBCA6A1CA2DEB300BCD485 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68FBCA6B1CA2DEB300BCD485 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		68FBCA6C1CA2DEB300BCD485 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -101,6 +101,10 @@
 		52089B891CA1808000C1E6D6 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				52089BD71CA2E56000C1E6D6 /* Cache */,
+				52089BD81CA2E56000C1E6D6 /* Defines */,
+				52089BD91CA2E56000C1E6D6 /* Features */,
+				52089BDA1CA2E56000C1E6D6 /* Kits */,
 				68FBCA671CA2DEB300BCD485 /* Main */,
 				52089B931CA1808000C1E6D6 /* Main.storyboard */,
 				52089B961CA1808000C1E6D6 /* Assets.xcassets */,
@@ -118,12 +122,40 @@
 			path = WalletTests;
 			sourceTree = "<group>";
 		};
+		52089BD71CA2E56000C1E6D6 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		52089BD81CA2E56000C1E6D6 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		52089BD91CA2E56000C1E6D6 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		52089BDA1CA2E56000C1E6D6 /* Kits */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Kits;
+			sourceTree = "<group>";
+		};
 		68FBCA671CA2DEB300BCD485 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				68FBCA701CA2DECD00BCD485 /* Info.plist */,
-				68FBCA681CA2DEB300BCD485 /* AppDelegate.h */,
-				68FBCA691CA2DEB300BCD485 /* AppDelegate.m */,
+				68FBCA681CA2DEB300BCD485 /* WTAppDelegate.h */,
+				68FBCA691CA2DEB300BCD485 /* WTAppDelegate.m */,
 				68FBCA6A1CA2DEB300BCD485 /* main.m */,
 				68FBCA6B1CA2DEB300BCD485 /* ViewController.h */,
 				68FBCA6C1CA2DEB300BCD485 /* ViewController.m */,
@@ -294,7 +326,7 @@
 			files = (
 				68FBCA6F1CA2DEB300BCD485 /* ViewController.m in Sources */,
 				68FBCA6E1CA2DEB300BCD485 /* main.m in Sources */,
-				68FBCA6D1CA2DEB300BCD485 /* AppDelegate.m in Sources */,
+				68FBCA6D1CA2DEB300BCD485 /* WTAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
