@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WTMainViewController : UITabbarViewController
+@class WTHomeViewController;
+@class WTChartViewControler;
+@class WTPersoanlViewController;
+
+@interface WTMainViewController : UITabBarController
+
+@property (nonatomic, strong, readonly) WTHomeViewController *homeViewController;
+@property (nonatomic, strong, readonly) WTChartViewControler *chartViewController;
+@property (nonatomic, strong, readonly) WTPersoanlViewController *personalViewController;
 
 @end
