@@ -7,205 +7,219 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03508310A9EC920D73C66587DC8C0E6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0307982621563C439755B9BC0ED60A1A /* Foundation.framework */; };
-		21ACFEDAD2B6923C9E06796290811CA5 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 615B6487F51287E32B73259A7179BF76 /* sqlite3.c */; settings = {COMPILER_FLAGS = "-DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2 -DSQLITE_THREADSAFE -DSQLCIPHER_CRYPTO_CC -fno-objc-arc"; }; };
-		296F1720FD316125676BE55CE5808A59 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 64B1069872D0BBE836D82AA8252A794A /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F6F2744E93B5A58D90FDA00A47A1D1F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C442E374486CC58B47F87839D0E287 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
-		301714DA1E8F6BB0061A6EC2EC4924A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0307982621563C439755B9BC0ED60A1A /* Foundation.framework */; };
-		36D301C0F7F03551F5A7C622AA9C138A /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = FF12020517EBEC718CCDD57896827B89 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		386504561631351BFAA7CD0151A2DF40 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E66F1F7885E380C799B888225DE309BC /* FMDB-dummy.m */; };
-		3A98CC6C567EDC8EBEC29D6424B6414C /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 433BFF7273DAE85A402425C966DD6D22 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		41793D260FC1F50B50CAEF0D3E6F14EF /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD186BCA3D50E0E353680B14F8AC39E /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
-		508111F29FC13BE1373E3D48879E2A53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0307982621563C439755B9BC0ED60A1A /* Foundation.framework */; };
-		89712B4FC273D641F5B11F1699B77763 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 561F42260857F7EBE37CA02DA012BD8A /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A330AA9F239B9BB08F2BDEE5CD257C2B /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9C4FB0D6602CFA1961FC2F7B706A11 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A461E282FDEF61F3E2337A2A356DB555 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 55893BFDEFA7A1D950CA3F746DC6A412 /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5FDE998CBE8A32C933C464CFDA6F495 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E475C9616AF3D478642D3D28C8CAC07B /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
-		BDF4100DC3B934C3A6D97CB428D784C2 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE3BFD46A789884DB934F3907D9BAFA /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
-		BFE5B566B17270D44DD0F4039D8F5C6C /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 10977454BD91BF73EDADB6BD62430E60 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E543258D7BA1B32103372672E5BF6AE1 /* Pods-Wallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF2AE2595A8510A80873F5D9E190735 /* Pods-Wallet-dummy.m */; };
-		FA6758784D1BBCD8B52DAC8C1979BA91 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FA6CD62EB7A9C85C7DBBA20924D70A /* Security.framework */; };
-		FDFD7BE46E8A99BD7B3B344FB1D2114B /* SQLCipher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC52DD469ED142CD801705613C5F52A /* SQLCipher-dummy.m */; };
-		FFA17BA2D68F5A4FF1400AA962766081 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B021DEDD705F87569D94D11F1804DA0 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
+		0DCDE3D8F77958CCEB179C2178F3ED14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF3EA1FE4AE0932122F8BB240E4A29E /* Foundation.framework */; };
+		30391BE868DD8D20C9C3043D10FA2CEF /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = B6C33436CDBA3A1528C58577A4C1A4AB /* sqlite3.c */; settings = {COMPILER_FLAGS = "-DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2 -DSQLITE_THREADSAFE -DSQLCIPHER_CRYPTO_CC -fno-objc-arc"; }; };
+		35DC96D7C128235BE147D114F2865656 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE7B136278A06118F17B3D756453528 /* UICountingLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3C26A0909D9DDD8D8168A2AB96BE80EB /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 467301715288DBD9B6928436F17CBF8B /* FMResultSet.h */; };
+		57DE8F4EFB57A07EE6C8E34D12127AAF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6714E533824D46158A8C5EE355092BC /* Security.framework */; };
+		5ABE72F6A5FAA8F6346234F8EB212115 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A52CD05FEB9E2D0C561DAD9A6625AB /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
+		6C1E9C52EEC46B172A2F134F51410A5E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1688338AEA0D64C6DC5FE127A99563C1 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
+		6D1174B909F618CCC064F8E89C084347 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF3EA1FE4AE0932122F8BB240E4A29E /* Foundation.framework */; };
+		6EDC045299A1F4A0A2FB187F72C78A20 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FE82BDB511D1372FBA4EB7D902E2D13 /* FMDatabasePool.h */; };
+		77F91E6553DA64A2823A76A3322264C1 /* SQLCipher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F91ADEC004B8D6272CC0464D517A98D6 /* SQLCipher-dummy.m */; };
+		86E1394D4D919C5190036C48D9F32045 /* UICountingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 70627154351CFC96604FECC70DF678FC /* UICountingLabel.h */; };
+		917AB22F5A6A98064635D078577BE266 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C6807A81791C3E9421A58292BBCBD394 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
+		9FE9535B28574C906E3ABCDC369B239F /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 602338CBFE4BF737F49EC492479800BC /* FMDatabase.h */; };
+		9FFF12B5828AA0825E0A928C360D1E6A /* Pods-Wallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10957105B90EBBBF97F7A98CAC29BB5D /* Pods-Wallet-dummy.m */; };
+		A16B076176CBAD3CD507E2BE86368AC7 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD3DC3DFA2A8655D5C41305D3DC225C /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
+		B9FD799D76A0E58BA88660AEB54F8087 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7272FB71BEDC6F5972047E2F2441C4 /* FMDatabaseQueue.h */; };
+		BFF28A6FFB583A8C5160F560683B564F /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A220F8DEC0A138222BD11E4FB1E2FD13 /* FMDB-dummy.m */; };
+		C6412FA88AF03CE6E8B3A624812E387B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E0751808A33DB09B24F6D788A1AF50 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
+		D1C7D92C200713AB74BD58172E8C80C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF3EA1FE4AE0932122F8BB240E4A29E /* Foundation.framework */; };
+		D5EB9285A42C8D60A5CAE78268CF49F2 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 205314BF29D76A2DF34B53BBFF1FD181 /* FMDB.h */; };
+		D7C392BEB1412E90685E24266921E15E /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C60CA710D57E4F5FC0B85558BB78DB4 /* FMDatabaseAdditions.h */; };
+		E4CD2AD499F7B7617BA646F3DC9B5A15 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6EDA513AE20DF20E4BCFFF9BE24A3C /* sqlite3.h */; };
+		FC9A569EE73D2DCD30E879C2B9870A42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF3EA1FE4AE0932122F8BB240E4A29E /* Foundation.framework */; };
+		FDA7921514C8A0E8466A7F1A1BB822AB /* UICountingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDA512E080495C2C44697CC9ACE2F0 /* UICountingLabel-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		765A63BC627195F6D886C1863BF82D03 /* PBXContainerItemProxy */ = {
+		1E47A414EE8B649A5D5D757463DAA087 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D638B9D6EB1F12C419CB5BCB69120921;
-			remoteInfo = SQLCipher;
-		};
-		80EE34C25EFADB87A13B3E6ABD36F183 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5CCC59A3DA32DC4436DE29C5D16C0243;
+			remoteGlobalIDString = F18BEEE550A7B9E8961BB04355B6F046;
 			remoteInfo = FMDB;
 		};
-		EB5E8AA055ECA0BC36B3B81E681B31A5 /* PBXContainerItemProxy */ = {
+		467DA4B2977794E17F6B906C9E41045D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D638B9D6EB1F12C419CB5BCB69120921;
+			remoteGlobalIDString = DF6B62D79728EF0641BA03AAAE9C576B;
+			remoteInfo = UICountingLabel;
+		};
+		4FB93FD71F89FCAEACA30D23E1E2AB13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DBA9B5004825869003EF47A5C4ACB79;
+			remoteInfo = SQLCipher;
+		};
+		79BE87CD34C11B11CFCE8B97EC9D29DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DBA9B5004825869003EF47A5C4ACB79;
 			remoteInfo = SQLCipher;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0307982621563C439755B9BC0ED60A1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		0F49BF9081644883471A9216B90D5D4C /* Pods-Wallet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Wallet-acknowledgements.plist"; sourceTree = "<group>"; };
-		10977454BD91BF73EDADB6BD62430E60 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
-		16ADFA4818904F276A4EB02A39F3AA9E /* SQLCipher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLCipher.xcconfig; sourceTree = "<group>"; };
-		279A02C93166C3310A060E461003893B /* Pods-Wallet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Wallet-acknowledgements.markdown"; sourceTree = "<group>"; };
-		336E9FCEE4FBBC6DE2BD63AA204A819A /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
-		3B3DAF6303EDB0AD612AE7891A855F2D /* libSQLCipher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSQLCipher.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		409C762C6419705D5415EC2C6D557A3D /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
-		40CE433B9695B62D6DBDBE528B101879 /* Pods-Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallet.debug.xcconfig"; sourceTree = "<group>"; };
-		433BFF7273DAE85A402425C966DD6D22 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
-		4B021DEDD705F87569D94D11F1804DA0 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		4FD186BCA3D50E0E353680B14F8AC39E /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
-		55893BFDEFA7A1D950CA3F746DC6A412 /* sqlite3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
-		561F42260857F7EBE37CA02DA012BD8A /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		57A751CB379AC0828D293FADF9911CD9 /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		60FA6CD62EB7A9C85C7DBBA20924D70A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		615B6487F51287E32B73259A7179BF76 /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
-		64B1069872D0BBE836D82AA8252A794A /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
-		851A8BA1F89C96AE29D88BA127AEE13A /* Pods-Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallet.release.xcconfig"; sourceTree = "<group>"; };
-		9C6E2E5DB9852C9A671676AFF504EF56 /* SQLCipher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-prefix.pch"; sourceTree = "<group>"; };
+		0B6EDA513AE20DF20E4BCFFF9BE24A3C /* sqlite3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		10957105B90EBBBF97F7A98CAC29BB5D /* Pods-Wallet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Wallet-dummy.m"; sourceTree = "<group>"; };
+		1688338AEA0D64C6DC5FE127A99563C1 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		205314BF29D76A2DF34B53BBFF1FD181 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		24F97DFB7F8F314332A0E3F6A5F019AC /* Pods-Wallet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Wallet-acknowledgements.plist"; sourceTree = "<group>"; };
+		2C67AFCCAB1D83665F3EE648035B4495 /* UICountingLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICountingLabel.xcconfig; sourceTree = "<group>"; };
+		3FE82BDB511D1372FBA4EB7D902E2D13 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		467301715288DBD9B6928436F17CBF8B /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		4CED0B84F92FCE8CFB0E75826C7D1B01 /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
+		5AFB975E56E5D5EA72DAFD75B24E7673 /* Pods-Wallet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Wallet-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5DE7B136278A06118F17B3D756453528 /* UICountingLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		602338CBFE4BF737F49EC492479800BC /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		638A293FFFB601478CA1639940E1F5FB /* libSQLCipher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSQLCipher.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		69293E75275643A993F553245548E160 /* UICountingLabel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UICountingLabel-Private.xcconfig"; sourceTree = "<group>"; };
+		6AEDA512E080495C2C44697CC9ACE2F0 /* UICountingLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICountingLabel-dummy.m"; sourceTree = "<group>"; };
+		70627154351CFC96604FECC70DF678FC /* UICountingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		795A4CEFEFC201A6F9FE04D765CE56ED /* Pods-Wallet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wallet-resources.sh"; sourceTree = "<group>"; };
+		80E0751808A33DB09B24F6D788A1AF50 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		8BF3EA1FE4AE0932122F8BB240E4A29E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8E85282A75D20E7FCDF79CEBFBC78C7B /* Pods-Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallet.release.xcconfig"; sourceTree = "<group>"; };
+		90A52CD05FEB9E2D0C561DAD9A6625AB /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		9213E0F096B8B206959D685FF6F8F32A /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C60CA710D57E4F5FC0B85558BB78DB4 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		9D7272FB71BEDC6F5972047E2F2441C4 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		A220F8DEC0A138222BD11E4FB1E2FD13 /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
+		AAD3DC3DFA2A8655D5C41305D3DC225C /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		B0A97FAA14A1ABC8CDAFDF5A24A3C683 /* Pods-Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallet.debug.xcconfig"; sourceTree = "<group>"; };
+		B6C33436CDBA3A1528C58577A4C1A4AB /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C729B7EAE9161CB40549E83BFB0D0192 /* Pods-Wallet-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wallet-frameworks.sh"; sourceTree = "<group>"; };
-		CBC52DD469ED142CD801705613C5F52A /* SQLCipher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLCipher-dummy.m"; sourceTree = "<group>"; };
-		D85E9FBAD3B790BBCFB96080502916A3 /* Pods-Wallet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wallet-resources.sh"; sourceTree = "<group>"; };
-		DA9C4FB0D6602CFA1961FC2F7B706A11 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
-		DCF2AE2595A8510A80873F5D9E190735 /* Pods-Wallet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Wallet-dummy.m"; sourceTree = "<group>"; };
-		DFE3BFD46A789884DB934F3907D9BAFA /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
-		E475C9616AF3D478642D3D28C8CAC07B /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
-		E5C442E374486CC58B47F87839D0E287 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
-		E66F1F7885E380C799B888225DE309BC /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
-		F26F6A40A74569CE657801BBA4C97AD5 /* libPods-Wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF12020517EBEC718CCDD57896827B89 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		BD69082C1D5D83447BA4C43CFD5061D7 /* libPods-Wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C085E52E5CA974147497B898A3F5DFE2 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
+		C6807A81791C3E9421A58292BBCBD394 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		C774832F3FFA1ACB3F3FA77662A98DCF /* libUICountingLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUICountingLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4271A52FC15851AA3ED71995526D22 /* SQLCipher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-prefix.pch"; sourceTree = "<group>"; };
+		CEF22E79DF4D9659C3C3C7A58766B492 /* UICountingLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICountingLabel-prefix.pch"; sourceTree = "<group>"; };
+		E01611FF1B10725802B2726ECD5379A2 /* FMDB-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FMDB-Private.xcconfig"; sourceTree = "<group>"; };
+		EBBC30CDDD946EC304609D36F6D59E84 /* SQLCipher-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SQLCipher-Private.xcconfig"; sourceTree = "<group>"; };
+		F6714E533824D46158A8C5EE355092BC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		F91ADEC004B8D6272CC0464D517A98D6 /* SQLCipher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLCipher-dummy.m"; sourceTree = "<group>"; };
+		FFF7F915A05EF6ECF509E59DB9D98079 /* SQLCipher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLCipher.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		155027909A62E8114813E9218AFF8D81 /* Frameworks */ = {
+		0F28D8BBE5F656C0D678A1ACA8231394 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				508111F29FC13BE1373E3D48879E2A53 /* Foundation.framework in Frameworks */,
+				0DCDE3D8F77958CCEB179C2178F3ED14 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48C492FC468B348C8DB57FC6D191AE9C /* Frameworks */ = {
+		500D1DBA9AB50A4FF1185CB7574716EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				301714DA1E8F6BB0061A6EC2EC4924A5 /* Foundation.framework in Frameworks */,
+				D1C7D92C200713AB74BD58172E8C80C2 /* Foundation.framework in Frameworks */,
+				57DE8F4EFB57A07EE6C8E34D12127AAF /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC5DA2639E07516B78C114A3C3523572 /* Frameworks */ = {
+		50DA7CDEF4635CEADCD32000AFFC9F7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03508310A9EC920D73C66587DC8C0E6C /* Foundation.framework in Frameworks */,
-				FA6758784D1BBCD8B52DAC8C1979BA91 /* Security.framework in Frameworks */,
+				FC9A569EE73D2DCD30E879C2B9870A42 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C263BB89CFE3631B407F5738EE47E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D1174B909F618CCC064F8E89C084347 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03A48FE5DD7A1CE6E42CD0C6A4993D80 /* common */ = {
+		0657DD8FCBEDC700C128EAC6F12025B9 /* UICountingLabel */ = {
 			isa = PBXGroup;
 			children = (
-				615B6487F51287E32B73259A7179BF76 /* sqlite3.c */,
-				55893BFDEFA7A1D950CA3F746DC6A412 /* sqlite3.h */,
+				70627154351CFC96604FECC70DF678FC /* UICountingLabel.h */,
+				5DE7B136278A06118F17B3D756453528 /* UICountingLabel.m */,
+				12AD534DF2B9A34E8C1FBBF4CAF4AA50 /* Support Files */,
 			);
-			name = common;
+			path = UICountingLabel;
 			sourceTree = "<group>";
 		};
-		338317DB357A4A0705C2021DF42E2154 /* Products */ = {
+		12AD534DF2B9A34E8C1FBBF4CAF4AA50 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				57A751CB379AC0828D293FADF9911CD9 /* libFMDB.a */,
-				F26F6A40A74569CE657801BBA4C97AD5 /* libPods-Wallet.a */,
-				3B3DAF6303EDB0AD612AE7891A855F2D /* libSQLCipher.a */,
+				2C67AFCCAB1D83665F3EE648035B4495 /* UICountingLabel.xcconfig */,
+				69293E75275643A993F553245548E160 /* UICountingLabel-Private.xcconfig */,
+				6AEDA512E080495C2C44697CC9ACE2F0 /* UICountingLabel-dummy.m */,
+				CEF22E79DF4D9659C3C3C7A58766B492 /* UICountingLabel-prefix.pch */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/UICountingLabel";
 			sourceTree = "<group>";
 		};
-		3740C01939A36CBE299A764E13C129DA /* SQLCipher */ = {
+		1E52B115A75614015B598BA0D361DB8B /* SQLCipher */ = {
 			isa = PBXGroup;
 			children = (
-				64B1069872D0BBE836D82AA8252A794A /* FMDatabase.h */,
-				E5C442E374486CC58B47F87839D0E287 /* FMDatabase.m */,
-				561F42260857F7EBE37CA02DA012BD8A /* FMDatabaseAdditions.h */,
-				4B021DEDD705F87569D94D11F1804DA0 /* FMDatabaseAdditions.m */,
-				10977454BD91BF73EDADB6BD62430E60 /* FMDatabasePool.h */,
-				DFE3BFD46A789884DB934F3907D9BAFA /* FMDatabasePool.m */,
-				433BFF7273DAE85A402425C966DD6D22 /* FMDatabaseQueue.h */,
-				4FD186BCA3D50E0E353680B14F8AC39E /* FMDatabaseQueue.m */,
-				DA9C4FB0D6602CFA1961FC2F7B706A11 /* FMDB.h */,
-				FF12020517EBEC718CCDD57896827B89 /* FMResultSet.h */,
-				E475C9616AF3D478642D3D28C8CAC07B /* FMResultSet.m */,
+				4F4F3B1089A5012FCC931BAABB6AF16A /* Support Files */,
+				F3CD63303AB36494463D3E3F1B16F9AF /* common */,
 			);
-			name = SQLCipher;
+			path = SQLCipher;
+			sourceTree = "<group>";
+		};
+		3A95EFC0DE516F7F3DD5D70D821A167C /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				C30D8E6B33800A1B84738EBAA87862CA /* SQLCipher */,
+				83FF4E8508EF9F414BCAA26E1BEFDFD4 /* Support Files */,
+				610DF3AE88D6BC0F414EA33DDAC0DCFA /* standard */,
+			);
+			path = FMDB;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5A86A7991AF0B723B7571D408852AEBF /* iOS */,
+				B7DC042EB208E60004AB32538B40FA79 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		460CACEE1D712A63AC1298224920D63E /* standard */ = {
+		4F4F3B1089A5012FCC931BAABB6AF16A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFF7F915A05EF6ECF509E59DB9D98079 /* SQLCipher.xcconfig */,
+				EBBC30CDDD946EC304609D36F6D59E84 /* SQLCipher-Private.xcconfig */,
+				F91ADEC004B8D6272CC0464D517A98D6 /* SQLCipher-dummy.m */,
+				CC4271A52FC15851AA3ED71995526D22 /* SQLCipher-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SQLCipher";
+			sourceTree = "<group>";
+		};
+		606C76FF9F921566892266A088E8C707 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A95EFC0DE516F7F3DD5D70D821A167C /* FMDB */,
+				1E52B115A75614015B598BA0D361DB8B /* SQLCipher */,
+				0657DD8FCBEDC700C128EAC6F12025B9 /* UICountingLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		610DF3AE88D6BC0F414EA33DDAC0DCFA /* standard */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = standard;
-			sourceTree = "<group>";
-		};
-		5A86A7991AF0B723B7571D408852AEBF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				0307982621563C439755B9BC0ED60A1A /* Foundation.framework */,
-				60FA6CD62EB7A9C85C7DBBA20924D70A /* Security.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		637716308008D19ADB12CC74ACE0A6EB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				336E9FCEE4FBBC6DE2BD63AA204A819A /* FMDB.xcconfig */,
-				E66F1F7885E380C799B888225DE309BC /* FMDB-dummy.m */,
-				409C762C6419705D5415EC2C6D557A3D /* FMDB-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FMDB";
-			sourceTree = "<group>";
-		};
-		6B238C2BEB96FA8E430476208E6CBA2D /* SQLCipher */ = {
-			isa = PBXGroup;
-			children = (
-				03A48FE5DD7A1CE6E42CD0C6A4993D80 /* common */,
-				7F3293CF9C7529D7C5B37AECD96285D3 /* Support Files */,
-			);
-			path = SQLCipher;
-			sourceTree = "<group>";
-		};
-		727FAD2EA607D80EDE2C3AD4E0821148 /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-				3740C01939A36CBE299A764E13C129DA /* SQLCipher */,
-				460CACEE1D712A63AC1298224920D63E /* standard */,
-				637716308008D19ADB12CC74ACE0A6EB /* Support Files */,
-			);
-			path = FMDB;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -213,125 +227,135 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				F64486AA09DF8C9485958CB7DA242DD2 /* Pods */,
-				338317DB357A4A0705C2021DF42E2154 /* Products */,
-				E3BB7FE8E6D8CCC5C06A20AB72DD4540 /* Targets Support Files */,
+				606C76FF9F921566892266A088E8C707 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				B8E1E3ED8417F397ABBBFF322D24BBD6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7F3293CF9C7529D7C5B37AECD96285D3 /* Support Files */ = {
+		83FF4E8508EF9F414BCAA26E1BEFDFD4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				16ADFA4818904F276A4EB02A39F3AA9E /* SQLCipher.xcconfig */,
-				CBC52DD469ED142CD801705613C5F52A /* SQLCipher-dummy.m */,
-				9C6E2E5DB9852C9A671676AFF504EF56 /* SQLCipher-prefix.pch */,
+				4CED0B84F92FCE8CFB0E75826C7D1B01 /* FMDB.xcconfig */,
+				E01611FF1B10725802B2726ECD5379A2 /* FMDB-Private.xcconfig */,
+				A220F8DEC0A138222BD11E4FB1E2FD13 /* FMDB-dummy.m */,
+				C085E52E5CA974147497B898A3F5DFE2 /* FMDB-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SQLCipher";
+			path = "../Target Support Files/FMDB";
 			sourceTree = "<group>";
 		};
-		93A2924AFF1A7B5526F06A6EF203ADF7 /* Pods-Wallet */ = {
+		9FFCCA24D499EC4261E64F73BA7E93C7 /* Pods-Wallet */ = {
 			isa = PBXGroup;
 			children = (
-				279A02C93166C3310A060E461003893B /* Pods-Wallet-acknowledgements.markdown */,
-				0F49BF9081644883471A9216B90D5D4C /* Pods-Wallet-acknowledgements.plist */,
-				DCF2AE2595A8510A80873F5D9E190735 /* Pods-Wallet-dummy.m */,
-				C729B7EAE9161CB40549E83BFB0D0192 /* Pods-Wallet-frameworks.sh */,
-				D85E9FBAD3B790BBCFB96080502916A3 /* Pods-Wallet-resources.sh */,
-				40CE433B9695B62D6DBDBE528B101879 /* Pods-Wallet.debug.xcconfig */,
-				851A8BA1F89C96AE29D88BA127AEE13A /* Pods-Wallet.release.xcconfig */,
+				5AFB975E56E5D5EA72DAFD75B24E7673 /* Pods-Wallet-acknowledgements.markdown */,
+				24F97DFB7F8F314332A0E3F6A5F019AC /* Pods-Wallet-acknowledgements.plist */,
+				10957105B90EBBBF97F7A98CAC29BB5D /* Pods-Wallet-dummy.m */,
+				795A4CEFEFC201A6F9FE04D765CE56ED /* Pods-Wallet-resources.sh */,
+				B0A97FAA14A1ABC8CDAFDF5A24A3C683 /* Pods-Wallet.debug.xcconfig */,
+				8E85282A75D20E7FCDF79CEBFBC78C7B /* Pods-Wallet.release.xcconfig */,
 			);
 			name = "Pods-Wallet";
 			path = "Target Support Files/Pods-Wallet";
 			sourceTree = "<group>";
 		};
-		E3BB7FE8E6D8CCC5C06A20AB72DD4540 /* Targets Support Files */ = {
+		B7DC042EB208E60004AB32538B40FA79 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				93A2924AFF1A7B5526F06A6EF203ADF7 /* Pods-Wallet */,
+				8BF3EA1FE4AE0932122F8BB240E4A29E /* Foundation.framework */,
+				F6714E533824D46158A8C5EE355092BC /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B8E1E3ED8417F397ABBBFF322D24BBD6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FFCCA24D499EC4261E64F73BA7E93C7 /* Pods-Wallet */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F64486AA09DF8C9485958CB7DA242DD2 /* Pods */ = {
+		C30D8E6B33800A1B84738EBAA87862CA /* SQLCipher */ = {
 			isa = PBXGroup;
 			children = (
-				727FAD2EA607D80EDE2C3AD4E0821148 /* FMDB */,
-				6B238C2BEB96FA8E430476208E6CBA2D /* SQLCipher */,
+				205314BF29D76A2DF34B53BBFF1FD181 /* FMDB.h */,
+				602338CBFE4BF737F49EC492479800BC /* FMDatabase.h */,
+				C6807A81791C3E9421A58292BBCBD394 /* FMDatabase.m */,
+				9C60CA710D57E4F5FC0B85558BB78DB4 /* FMDatabaseAdditions.h */,
+				AAD3DC3DFA2A8655D5C41305D3DC225C /* FMDatabaseAdditions.m */,
+				3FE82BDB511D1372FBA4EB7D902E2D13 /* FMDatabasePool.h */,
+				90A52CD05FEB9E2D0C561DAD9A6625AB /* FMDatabasePool.m */,
+				9D7272FB71BEDC6F5972047E2F2441C4 /* FMDatabaseQueue.h */,
+				1688338AEA0D64C6DC5FE127A99563C1 /* FMDatabaseQueue.m */,
+				467301715288DBD9B6928436F17CBF8B /* FMResultSet.h */,
+				80E0751808A33DB09B24F6D788A1AF50 /* FMResultSet.m */,
 			);
-			name = Pods;
+			name = SQLCipher;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9213E0F096B8B206959D685FF6F8F32A /* libFMDB.a */,
+				BD69082C1D5D83447BA4C43CFD5061D7 /* libPods-Wallet.a */,
+				638A293FFFB601478CA1639940E1F5FB /* libSQLCipher.a */,
+				C774832F3FFA1ACB3F3FA77662A98DCF /* libUICountingLabel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3CD63303AB36494463D3E3F1B16F9AF /* common */ = {
+			isa = PBXGroup;
+			children = (
+				B6C33436CDBA3A1528C58577A4C1A4AB /* sqlite3.c */,
+				0B6EDA513AE20DF20E4BCFFF9BE24A3C /* sqlite3.h */,
+			);
+			name = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		74BC5B7F429EFF76815F488B340E735D /* Headers */ = {
+		05A24A30A0D82D9253353FAA9608C5E8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A461E282FDEF61F3E2337A2A356DB555 /* sqlite3.h in Headers */,
+				D5EB9285A42C8D60A5CAE78268CF49F2 /* FMDB.h in Headers */,
+				9FE9535B28574C906E3ABCDC369B239F /* FMDatabase.h in Headers */,
+				D7C392BEB1412E90685E24266921E15E /* FMDatabaseAdditions.h in Headers */,
+				6EDC045299A1F4A0A2FB187F72C78A20 /* FMDatabasePool.h in Headers */,
+				B9FD799D76A0E58BA88660AEB54F8087 /* FMDatabaseQueue.h in Headers */,
+				3C26A0909D9DDD8D8168A2AB96BE80EB /* FMResultSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F05B5FB7D6D1694502418DA584E89833 /* Headers */ = {
+		9F30A437FAE36B7A6CFDABC843D83D2C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				296F1720FD316125676BE55CE5808A59 /* FMDatabase.h in Headers */,
-				89712B4FC273D641F5B11F1699B77763 /* FMDatabaseAdditions.h in Headers */,
-				BFE5B566B17270D44DD0F4039D8F5C6C /* FMDatabasePool.h in Headers */,
-				3A98CC6C567EDC8EBEC29D6424B6414C /* FMDatabaseQueue.h in Headers */,
-				A330AA9F239B9BB08F2BDEE5CD257C2B /* FMDB.h in Headers */,
-				36D301C0F7F03551F5A7C622AA9C138A /* FMResultSet.h in Headers */,
+				86E1394D4D919C5190036C48D9F32045 /* UICountingLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C960A65160633289546A546F7ABCA009 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4CD2AD499F7B7617BA646F3DC9B5A15 /* sqlite3.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5CCC59A3DA32DC4436DE29C5D16C0243 /* FMDB */ = {
+		0DBA9B5004825869003EF47A5C4ACB79 /* SQLCipher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8ECBE44C5A4FA165C2A7C7F1911E6AED /* Build configuration list for PBXNativeTarget "FMDB" */;
+			buildConfigurationList = 013C975C170EF17F138E7F4F34F9BCC2 /* Build configuration list for PBXNativeTarget "SQLCipher" */;
 			buildPhases = (
-				D9ABE3A471EF96EF2DE8E4FBE1464C14 /* Sources */,
-				155027909A62E8114813E9218AFF8D81 /* Frameworks */,
-				F05B5FB7D6D1694502418DA584E89833 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EF73D00801A7B6CA1287BE3B29033877 /* PBXTargetDependency */,
-			);
-			name = FMDB;
-			productName = FMDB;
-			productReference = 57A751CB379AC0828D293FADF9911CD9 /* libFMDB.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		C2BA14BF60ED4F7A8C18244C9A7A01A9 /* Pods-Wallet */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CD970D83D8D1B084FA9B70CAEEB00A78 /* Build configuration list for PBXNativeTarget "Pods-Wallet" */;
-			buildPhases = (
-				E1CC5164F963E0D00C9C07F5094684AB /* Sources */,
-				48C492FC468B348C8DB57FC6D191AE9C /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A87B5E6AF11297FF335F569B903CD6AA /* PBXTargetDependency */,
-				C6CF0685ED63B8B8E0FF9BC3794F4A07 /* PBXTargetDependency */,
-			);
-			name = "Pods-Wallet";
-			productName = "Pods-Wallet";
-			productReference = F26F6A40A74569CE657801BBA4C97AD5 /* libPods-Wallet.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		D638B9D6EB1F12C419CB5BCB69120921 /* SQLCipher */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EB1C129CA127307A3EAEB0ADA08DB8DD /* Build configuration list for PBXNativeTarget "SQLCipher" */;
-			buildPhases = (
-				EF8E41D17ABCE5693484C098A54917E5 /* Sources */,
-				AC5DA2639E07516B78C114A3C3523572 /* Frameworks */,
-				74BC5B7F429EFF76815F488B340E735D /* Headers */,
+				FDA5054B5359771CADFCE90867E1FA31 /* Sources */,
+				500D1DBA9AB50A4FF1185CB7574716EE /* Frameworks */,
+				C960A65160633289546A546F7ABCA009 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -339,7 +363,61 @@
 			);
 			name = SQLCipher;
 			productName = SQLCipher;
-			productReference = 3B3DAF6303EDB0AD612AE7891A855F2D /* libSQLCipher.a */;
+			productReference = 638A293FFFB601478CA1639940E1F5FB /* libSQLCipher.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9480995FFC5B2AA592E33C5DA26EB93C /* Pods-Wallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDD2158BB3B765FF6B8A9CA60F50BAA7 /* Build configuration list for PBXNativeTarget "Pods-Wallet" */;
+			buildPhases = (
+				947A3A3552BB1C7D4B29E83C428E4639 /* Sources */,
+				E9C263BB89CFE3631B407F5738EE47E9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F5F619DCA172B45628680EDA6094673 /* PBXTargetDependency */,
+				7EEA759F1FFB04613133A7F3887C1EAA /* PBXTargetDependency */,
+				A77228180E5A11A7F7C62078AE65D3F5 /* PBXTargetDependency */,
+			);
+			name = "Pods-Wallet";
+			productName = "Pods-Wallet";
+			productReference = BD69082C1D5D83447BA4C43CFD5061D7 /* libPods-Wallet.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DF6B62D79728EF0641BA03AAAE9C576B /* UICountingLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9CC693B54635B7676583B6DC5A868D1 /* Build configuration list for PBXNativeTarget "UICountingLabel" */;
+			buildPhases = (
+				0BC2968BA1D48FA8FB730E596D23342F /* Sources */,
+				0F28D8BBE5F656C0D678A1ACA8231394 /* Frameworks */,
+				9F30A437FAE36B7A6CFDABC843D83D2C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UICountingLabel;
+			productName = UICountingLabel;
+			productReference = C774832F3FFA1ACB3F3FA77662A98DCF /* libUICountingLabel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F18BEEE550A7B9E8961BB04355B6F046 /* FMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2AB6C916CCD358DE4A730709D9AA435 /* Build configuration list for PBXNativeTarget "FMDB" */;
+			buildPhases = (
+				722E981E4C8E2C7A4C8EBBC1C5C51AB6 /* Sources */,
+				50DA7CDEF4635CEADCD32000AFFC9F7A /* Frameworks */,
+				05A24A30A0D82D9253353FAA9608C5E8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CF11372A2A453F28DBB798A15CD6B97 /* PBXTargetDependency */,
+			);
+			name = FMDB;
+			productName = FMDB;
+			productReference = 9213E0F096B8B206959D685FF6F8F32A /* libFMDB.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -359,68 +437,84 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 338317DB357A4A0705C2021DF42E2154 /* Products */;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5CCC59A3DA32DC4436DE29C5D16C0243 /* FMDB */,
-				C2BA14BF60ED4F7A8C18244C9A7A01A9 /* Pods-Wallet */,
-				D638B9D6EB1F12C419CB5BCB69120921 /* SQLCipher */,
+				F18BEEE550A7B9E8961BB04355B6F046 /* FMDB */,
+				9480995FFC5B2AA592E33C5DA26EB93C /* Pods-Wallet */,
+				0DBA9B5004825869003EF47A5C4ACB79 /* SQLCipher */,
+				DF6B62D79728EF0641BA03AAAE9C576B /* UICountingLabel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D9ABE3A471EF96EF2DE8E4FBE1464C14 /* Sources */ = {
+		0BC2968BA1D48FA8FB730E596D23342F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F6F2744E93B5A58D90FDA00A47A1D1F /* FMDatabase.m in Sources */,
-				FFA17BA2D68F5A4FF1400AA962766081 /* FMDatabaseAdditions.m in Sources */,
-				BDF4100DC3B934C3A6D97CB428D784C2 /* FMDatabasePool.m in Sources */,
-				41793D260FC1F50B50CAEF0D3E6F14EF /* FMDatabaseQueue.m in Sources */,
-				386504561631351BFAA7CD0151A2DF40 /* FMDB-dummy.m in Sources */,
-				B5FDE998CBE8A32C933C464CFDA6F495 /* FMResultSet.m in Sources */,
+				FDA7921514C8A0E8466A7F1A1BB822AB /* UICountingLabel-dummy.m in Sources */,
+				35DC96D7C128235BE147D114F2865656 /* UICountingLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1CC5164F963E0D00C9C07F5094684AB /* Sources */ = {
+		722E981E4C8E2C7A4C8EBBC1C5C51AB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E543258D7BA1B32103372672E5BF6AE1 /* Pods-Wallet-dummy.m in Sources */,
+				BFF28A6FFB583A8C5160F560683B564F /* FMDB-dummy.m in Sources */,
+				917AB22F5A6A98064635D078577BE266 /* FMDatabase.m in Sources */,
+				A16B076176CBAD3CD507E2BE86368AC7 /* FMDatabaseAdditions.m in Sources */,
+				5ABE72F6A5FAA8F6346234F8EB212115 /* FMDatabasePool.m in Sources */,
+				6C1E9C52EEC46B172A2F134F51410A5E /* FMDatabaseQueue.m in Sources */,
+				C6412FA88AF03CE6E8B3A624812E387B /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF8E41D17ABCE5693484C098A54917E5 /* Sources */ = {
+		947A3A3552BB1C7D4B29E83C428E4639 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDFD7BE46E8A99BD7B3B344FB1D2114B /* SQLCipher-dummy.m in Sources */,
-				21ACFEDAD2B6923C9E06796290811CA5 /* sqlite3.c in Sources */,
+				9FFF12B5828AA0825E0A928C360D1E6A /* Pods-Wallet-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA5054B5359771CADFCE90867E1FA31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F91E6553DA64A2823A76A3322264C1 /* SQLCipher-dummy.m in Sources */,
+				30391BE868DD8D20C9C3043D10FA2CEF /* sqlite3.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A87B5E6AF11297FF335F569B903CD6AA /* PBXTargetDependency */ = {
+		1F5F619DCA172B45628680EDA6094673 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FMDB;
-			target = 5CCC59A3DA32DC4436DE29C5D16C0243 /* FMDB */;
-			targetProxy = 80EE34C25EFADB87A13B3E6ABD36F183 /* PBXContainerItemProxy */;
+			target = F18BEEE550A7B9E8961BB04355B6F046 /* FMDB */;
+			targetProxy = 1E47A414EE8B649A5D5D757463DAA087 /* PBXContainerItemProxy */;
 		};
-		C6CF0685ED63B8B8E0FF9BC3794F4A07 /* PBXTargetDependency */ = {
+		7EEA759F1FFB04613133A7F3887C1EAA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SQLCipher;
-			target = D638B9D6EB1F12C419CB5BCB69120921 /* SQLCipher */;
-			targetProxy = EB5E8AA055ECA0BC36B3B81E681B31A5 /* PBXContainerItemProxy */;
+			target = 0DBA9B5004825869003EF47A5C4ACB79 /* SQLCipher */;
+			targetProxy = 79BE87CD34C11B11CFCE8B97EC9D29DA /* PBXContainerItemProxy */;
 		};
-		EF73D00801A7B6CA1287BE3B29033877 /* PBXTargetDependency */ = {
+		9CF11372A2A453F28DBB798A15CD6B97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SQLCipher;
-			target = D638B9D6EB1F12C419CB5BCB69120921 /* SQLCipher */;
-			targetProxy = 765A63BC627195F6D886C1863BF82D03 /* PBXContainerItemProxy */;
+			target = 0DBA9B5004825869003EF47A5C4ACB79 /* SQLCipher */;
+			targetProxy = 4FB93FD71F89FCAEACA30D23E1E2AB13 /* PBXContainerItemProxy */;
+		};
+		A77228180E5A11A7F7C62078AE65D3F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICountingLabel;
+			target = DF6B62D79728EF0641BA03AAAE9C576B /* UICountingLabel */;
+			targetProxy = 467DA4B2977794E17F6B906C9E41045D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -459,13 +553,92 @@
 			};
 			name = Release;
 		};
-		0875FE4AE6C6390DFED7EF43191A6864 /* Release */ = {
+		1B9586488AEC49836E65B0B96EDA26CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 851A8BA1F89C96AE29D88BA127AEE13A /* Pods-Wallet.release.xcconfig */;
+			baseConfigurationReference = 69293E75275643A993F553245548E160 /* UICountingLabel-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UICountingLabel/UICountingLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3023B4B8DA6FD9C257A025525DAACFD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBBC30CDDD946EC304609D36F6D59E84 /* SQLCipher-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5D4E10CF48CEF2584D7D7937CCCFFBF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69293E75275643A993F553245548E160 /* UICountingLabel-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UICountingLabel/UICountingLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		60796223A380A33176CF62033E70430F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A97FAA14A1ABC8CDAFDF5A24A3C683 /* Pods-Wallet.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7B29E16A2C72B5FC14F6F3FC03AEBEE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E01611FF1B10725802B2726ECD5379A2 /* FMDB-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8F91EA401B8FCD3E75DEED642D5BF409 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E85282A75D20E7FCDF79CEBFBC78C7B /* Pods-Wallet.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -476,27 +649,9 @@
 			};
 			name = Release;
 		};
-		297A5C1A9440FA7157988605DE317563 /* Release */ = {
+		AC427F6F7501C45CE953C0C50CA5573E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16ADFA4818904F276A4EB02A39F3AA9E /* SQLCipher.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		51A74BB162E47CD720FE9EE6D141C378 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16ADFA4818904F276A4EB02A39F3AA9E /* SQLCipher.xcconfig */;
+			baseConfigurationReference = EBBC30CDDD946EC304609D36F6D59E84 /* SQLCipher-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
@@ -504,27 +659,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A8A67D9F34915E95B2A79F93C02B0B25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 336E9FCEE4FBBC6DE2BD63AA204A819A /* FMDB.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -569,9 +704,9 @@
 			};
 			name = Debug;
 		};
-		D822479E203CBFAAC585C35C4A46C91E /* Release */ = {
+		E75B09AAAF37B681F3F5A82AE6A4B207 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 336E9FCEE4FBBC6DE2BD63AA204A819A /* FMDB.xcconfig */;
+			baseConfigurationReference = E01611FF1B10725802B2726ECD5379A2 /* FMDB-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
@@ -579,34 +714,24 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		F8BEDEA4F4FA068F5BE134CFA8D4C263 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40CE433B9695B62D6DBDBE528B101879 /* Pods-Wallet.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		013C975C170EF17F138E7F4F34F9BCC2 /* Build configuration list for PBXNativeTarget "SQLCipher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC427F6F7501C45CE953C0C50CA5573E /* Debug */,
+				3023B4B8DA6FD9C257A025525DAACFD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -616,29 +741,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8ECBE44C5A4FA165C2A7C7F1911E6AED /* Build configuration list for PBXNativeTarget "FMDB" */ = {
+		A2AB6C916CCD358DE4A730709D9AA435 /* Build configuration list for PBXNativeTarget "FMDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A8A67D9F34915E95B2A79F93C02B0B25 /* Debug */,
-				D822479E203CBFAAC585C35C4A46C91E /* Release */,
+				7B29E16A2C72B5FC14F6F3FC03AEBEE0 /* Debug */,
+				E75B09AAAF37B681F3F5A82AE6A4B207 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD970D83D8D1B084FA9B70CAEEB00A78 /* Build configuration list for PBXNativeTarget "Pods-Wallet" */ = {
+		EDD2158BB3B765FF6B8A9CA60F50BAA7 /* Build configuration list for PBXNativeTarget "Pods-Wallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F8BEDEA4F4FA068F5BE134CFA8D4C263 /* Debug */,
-				0875FE4AE6C6390DFED7EF43191A6864 /* Release */,
+				60796223A380A33176CF62033E70430F /* Debug */,
+				8F91EA401B8FCD3E75DEED642D5BF409 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB1C129CA127307A3EAEB0ADA08DB8DD /* Build configuration list for PBXNativeTarget "SQLCipher" */ = {
+		F9CC693B54635B7676583B6DC5A868D1 /* Build configuration list for PBXNativeTarget "UICountingLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				51A74BB162E47CD720FE9EE6D141C378 /* Debug */,
-				297A5C1A9440FA7157988605DE317563 /* Release */,
+				5D4E10CF48CEF2584D7D7937CCCFFBF4 /* Debug */,
+				1B9586488AEC49836E65B0B96EDA26CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,13 +9,16 @@ PODS:
   - SQLCipher/common (3.1.0)
   - SQLCipher/standard (3.1.0):
     - SQLCipher/common
+  - UICountingLabel (1.4.0)
 
 DEPENDENCIES:
   - FMDB
   - FMDB/SQLCipher
+  - UICountingLabel
 
 SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   SQLCipher: 4684434d5791db86512cd7e02172aefba575849e
+  UICountingLabel: ed5ce5b6d5ef278ff40d99cfa49577a30ab0c87b
 
-COCOAPODS: 0.39.0
+COCOAPODS: 0.38.2

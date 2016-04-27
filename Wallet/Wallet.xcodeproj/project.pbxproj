@@ -15,6 +15,8 @@
 		52089BF21CA2E70100C1E6D6 /* WTChartViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BF11CA2E70100C1E6D6 /* WTChartViewControler.m */; settings = {ASSET_TAGS = (); }; };
 		52089BF51CA2E70F00C1E6D6 /* WTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BF41CA2E70F00C1E6D6 /* WTHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		52089BF81CA2E72200C1E6D6 /* WTPersoanlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BF71CA2E72200C1E6D6 /* WTPersoanlViewController.m */; settings = {ASSET_TAGS = (); }; };
+		520B24921CD053E700F06B73 /* WTHomeTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B24911CD053E700F06B73 /* WTHomeTableViewHeaderView.m */; settings = {ASSET_TAGS = (); }; };
+		520B24961CD0545E00F06B73 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B24951CD0545E00F06B73 /* Mediator.m */; settings = {ASSET_TAGS = (); }; };
 		68FBCA6D1CA2DEB300BCD485 /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA691CA2DEB300BCD485 /* WTAppDelegate.m */; };
 		68FBCA6E1CA2DEB300BCD485 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA6A1CA2DEB300BCD485 /* main.m */; };
 		68FBCA6F1CA2DEB300BCD485 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA6C1CA2DEB300BCD485 /* ViewController.m */; };
@@ -50,6 +52,11 @@
 		52089BF41CA2E70F00C1E6D6 /* WTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTHomeViewController.m; sourceTree = "<group>"; };
 		52089BF61CA2E72200C1E6D6 /* WTPersoanlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTPersoanlViewController.h; sourceTree = "<group>"; };
 		52089BF71CA2E72200C1E6D6 /* WTPersoanlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTPersoanlViewController.m; sourceTree = "<group>"; };
+		520B24901CD053E700F06B73 /* WTHomeTableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTHomeTableViewHeaderView.h; sourceTree = "<group>"; };
+		520B24911CD053E700F06B73 /* WTHomeTableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTHomeTableViewHeaderView.m; sourceTree = "<group>"; };
+		520B24941CD0545E00F06B73 /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		520B24951CD0545E00F06B73 /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		520B24971CD0547C00F06B73 /* WTGlobalMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTGlobalMacro.h; sourceTree = "<group>"; };
 		5894D8F429867757ABAADA29 /* libPods-Wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8BA0962AC8EDF3458A17A9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FBCA681CA2DEB300BCD485 /* WTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAppDelegate.h; sourceTree = "<group>"; };
@@ -113,6 +120,7 @@
 		52089B891CA1808000C1E6D6 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				520B24931CD0544700F06B73 /* Mediator */,
 				52089BD71CA2E56000C1E6D6 /* Cache */,
 				52089BD81CA2E56000C1E6D6 /* Defines */,
 				52089BD91CA2E56000C1E6D6 /* Features */,
@@ -144,6 +152,7 @@
 		52089BD81CA2E56000C1E6D6 /* Defines */ = {
 			isa = PBXGroup;
 			children = (
+				520B24971CD0547C00F06B73 /* WTGlobalMacro.h */,
 			);
 			path = Defines;
 			sourceTree = "<group>";
@@ -262,6 +271,8 @@
 		52089BE91CA2E6BF00C1E6D6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				520B24901CD053E700F06B73 /* WTHomeTableViewHeaderView.h */,
+				520B24911CD053E700F06B73 /* WTHomeTableViewHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,6 +323,15 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		520B24931CD0544700F06B73 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				520B24941CD0545E00F06B73 /* Mediator.h */,
+				520B24951CD0545E00F06B73 /* Mediator.m */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
 		68FBCA671CA2DEB300BCD485 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,7 +367,6 @@
 				52089B831CA1808000C1E6D6 /* Sources */,
 				52089B841CA1808000C1E6D6 /* Frameworks */,
 				52089B851CA1808000C1E6D6 /* Resources */,
-				9514C2A0D797DB1CD4BD39D6 /* Embed Pods Frameworks */,
 				A948BB4DCC996B353CCFC0A5 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -436,21 +455,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9514C2A0D797DB1CD4BD39D6 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wallet/Pods-Wallet-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		98A83CFF434A6157F46692BD /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -489,10 +493,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				52089BF51CA2E70F00C1E6D6 /* WTHomeViewController.m in Sources */,
+				520B24921CD053E700F06B73 /* WTHomeTableViewHeaderView.m in Sources */,
 				52089BF81CA2E72200C1E6D6 /* WTPersoanlViewController.m in Sources */,
 				52089BDD1CA2E5D000C1E6D6 /* WTMainViewController.m in Sources */,
 				52089BF21CA2E70100C1E6D6 /* WTChartViewControler.m in Sources */,
 				68FBCA6F1CA2DEB300BCD485 /* ViewController.m in Sources */,
+				520B24961CD0545E00F06B73 /* Mediator.m in Sources */,
 				68FBCA6E1CA2DEB300BCD485 /* main.m in Sources */,
 				68FBCA6D1CA2DEB300BCD485 /* WTAppDelegate.m in Sources */,
 			);
