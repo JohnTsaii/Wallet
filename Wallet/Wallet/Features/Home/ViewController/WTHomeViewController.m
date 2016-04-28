@@ -10,9 +10,13 @@
 
 // views
 #import "WTHomeTableViewHeaderView.h"
+#import "WTBalanceRecordCell.h"
 
 // define
 #import "WTGlobalMacro.h"
+
+
+static NSString *kWTBalanceRecordCellIdentifer = @"kWTBalanceRecordCellIdentifer";
 
 @interface WTHomeViewController ()
 <UITableViewDataSource, UITableViewDelegate>
@@ -29,7 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.tableView reloadData];
+    [self.tableView registerClass:[WTBalanceRecordCell class] forCellReuseIdentifier:kWTBalanceRecordCellIdentifer];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -70,25 +74,27 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *identifier = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-    }
+    WTBalanceRecordCell *cell = [tableView dequeueReusableCellWithIdentifier:kWTBalanceRecordCellIdentifer];
     
     [self configureCell:cell forRowAtIndexPath:indexPath];
     
     return cell;
 }
-- (void)configureCell:(UITableViewCell *)cell
+- (void)configureCell:(WTBalanceRecordCell *)cell
     forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    cell.textLabel.text = @"111";
+    [cell configCell];
 }
 
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     return @"最近收支";
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    cell.separatorInset = UIEdgeInsetsZero;
+    cell.layoutMargins = UIEdgeInsetsZero;
+    tableView.layoutMargins = UIEdgeInsetsZero;
 }
 
 #pragma mark - event response

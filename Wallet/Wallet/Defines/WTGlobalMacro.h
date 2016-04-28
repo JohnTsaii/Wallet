@@ -17,4 +17,7 @@
 ///////////////////////// STYLE ///////////////////////////////////
 #define WT_DECIMAL_FONT_SIZE(x) [UIFont fontWithName:@"HelveticaNeue" size:x]
 
+#define WT_DECIMAL_POSITIVE_COLOR [UIColor colorWithRed:0/255.0 green:204/255.0 blue:116/255.0 alpha:1.0]
+#define WT_DECIMAL_NEGATIVE_COLOR [UIColor colorWithRed:243/255.0 green:78/255.0 blue:64/255.0 alpha:1.0]
+
 #endif /* WTGlobalMacro_h */

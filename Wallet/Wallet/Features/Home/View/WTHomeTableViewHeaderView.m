@@ -70,7 +70,7 @@
                                                       constant:0]];
     
     // default value
-    [self setCount:1000];
+    [self setCount:10000];
     [self setRemindText:@"点击记账"];
     
 }
@@ -103,17 +103,20 @@
 
 - (void)setCount:(CGFloat)count {
     
-    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-    formatter.numberStyle = kCFNumberFormatterDecimalStyle;
-    
-    self.countLabel.text = [formatter stringFromNumber:[NSNumber numberWithFloat:count]];
-    
-    
     [self.countLabel countFromCurrentValueTo:count];
+    __block UIColor *countLableColor;
+    if (count > 0.0) {
+        countLableColor = WT_DECIMAL_POSITIVE_COLOR;
+    } else if (count < 0.0) {
+        countLableColor = WT_DECIMAL_NEGATIVE_COLOR;
+    } else {
+        countLableColor = [UIColor lightGrayColor];
+    }
+    self.countLabel.textColor = countLableColor;
     
     self.countLabel.attributedFormatBlock = ^NSAttributedString* (CGFloat value) {
         NSDictionary *attribs = @{
-                                  NSForegroundColorAttributeName: [UIColor blackColor],
+                                  NSForegroundColorAttributeName: countLableColor,
                                   NSFontAttributeName: [UIFont systemFontOfSize:20.0f]
                                   };
         NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"￥%0.2f", value]];
