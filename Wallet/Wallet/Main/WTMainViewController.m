@@ -47,7 +47,7 @@
                                                                              image:[UIImage imageNamed:@"chart_select"]
                                                                      selectedImage:[UIImage imageNamed:@"chart_selected"]];
     
-    self.personalNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"个人"
+    self.personalNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我"
                                                                              image:[UIImage imageNamed:@"profile_select"]
                                                                      selectedImage:[UIImage imageNamed:@"profile_selected"]];
     
