@@ -90,7 +90,7 @@
     if (indexPath.section == 1) {
         if (indexPath.row == 0) {
             cell.imageView.image = [UIImage imageNamed:@"personal_sport"];
-            cell.textLabel.text = @"我运动，我健康";
+            cell.textLabel.text = @"我运动，我健康，我快乐";
         }
     }
 }

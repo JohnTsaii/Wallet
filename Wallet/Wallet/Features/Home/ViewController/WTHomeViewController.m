@@ -103,7 +103,9 @@ static NSString *kWTBalanceRecordCellIdentifer = @"kWTBalanceRecordCellIdentifer
 }
 
 #pragma mark - private method
-
+- (BOOL)prefersStatusBarHidden {
+    return NO;
+}
 #pragma mark - getters and setters
 - (UITableView *)tableView {
     if (!_tableView) {

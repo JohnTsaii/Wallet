@@ -25,14 +25,16 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="alC-oq-e0a" secondAttribute="trailing" id="0AX-kp-f2C"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="alC-oq-e0a" secondAttribute="bottom" id="SW0-51-cT2"/>
-                            <constraint firstItem="alC-oq-e0a" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="ckw-EV-6bf"/>
+                            <constraint firstItem="alC-oq-e0a" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="ckw-EV-6bf">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-20"/>
+                            </constraint>
                             <constraint firstItem="alC-oq-e0a" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="zsM-7V-naH"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
     <resources>
