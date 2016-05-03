@@ -8,22 +8,51 @@
 
 #import "WTAppDelegate.h"
 #import "WTMainViewController.h"
+#import <FMDB/FMDB.h>
 
 @interface WTAppDelegate ()
-
+@property (nonatomic, strong) FMDatabase *db;
 @end
 
 @implementation WTAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //--data base---
+    [self initDatabase];
+    [self createTable];
+    //----
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[WTMainViewController alloc] init];
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+- (void)initDatabase
+{
+    NSString *docsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0]; //数据库路径
+    NSString *dbPath = [docsPath stringByAppendingPathComponent:@"main.db"];
+    self.db = [FMDatabase databaseWithPath:dbPath];
+    if (![self.db open]) {
+        DLog(@"db open error!");
+    }
+    [self.db setShouldCacheStatements:YES];//缓存，提高查询效率
+}
+
+- (void)createTable
+{
+    NSString *sql = @"create table if not exists 'TWRecord' (mId integer primary key autoincrement not null,\
+    money float not null default 0,\
+    date double not null default 0,\
+    desc text not null default '',\
+    category_id integer not null default 0,\
+    categoryName text not null default '');"
+    "create table if not exists 'TWCategorys' (mId integer primary key autoincrement not null,\
+    name text not null default '');";
+    
+    [self.db executeStatements:sql];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

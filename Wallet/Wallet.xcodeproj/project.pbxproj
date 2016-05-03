@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		520612071CD1B0A300B2892E /* WTAccountingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520612061CD1B0A300B2892E /* WTAccountingViewController.m */; settings = {ASSET_TAGS = (); }; };
+		520612071CD1B0A300B2892E /* WTAccountingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520612061CD1B0A300B2892E /* WTAccountingViewController.m */; };
 		52089B951CA1808000C1E6D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52089B931CA1808000C1E6D6 /* Main.storyboard */; };
 		52089B971CA1808000C1E6D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52089B961CA1808000C1E6D6 /* Assets.xcassets */; };
 		52089B9A1CA1808000C1E6D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52089B981CA1808000C1E6D6 /* LaunchScreen.storyboard */; };
 		52089BA51CA1808000C1E6D6 /* WalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BA41CA1808000C1E6D6 /* WalletTests.m */; };
-		52089BDD1CA2E5D000C1E6D6 /* WTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BDC1CA2E5D000C1E6D6 /* WTMainViewController.m */; settings = {ASSET_TAGS = (); }; };
-		52089BF21CA2E70100C1E6D6 /* WTChartViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BF11CA2E70100C1E6D6 /* WTChartViewControler.m */; settings = {ASSET_TAGS = (); }; };
-		52089BF51CA2E70F00C1E6D6 /* WTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BF41CA2E70F00C1E6D6 /* WTHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
-		52089BF81CA2E72200C1E6D6 /* WTPersoanlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BF71CA2E72200C1E6D6 /* WTPersoanlViewController.m */; settings = {ASSET_TAGS = (); }; };
-		520B24921CD053E700F06B73 /* WTHomeTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B24911CD053E700F06B73 /* WTHomeTableViewHeaderView.m */; settings = {ASSET_TAGS = (); }; };
-		520B24961CD0545E00F06B73 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B24951CD0545E00F06B73 /* Mediator.m */; settings = {ASSET_TAGS = (); }; };
-		520B249A1CD08F5A00F06B73 /* WTBalanceRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B24991CD08F5A00F06B73 /* WTBalanceRecordCell.m */; settings = {ASSET_TAGS = (); }; };
+		52089BDD1CA2E5D000C1E6D6 /* WTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BDC1CA2E5D000C1E6D6 /* WTMainViewController.m */; };
+		52089BF21CA2E70100C1E6D6 /* WTChartViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BF11CA2E70100C1E6D6 /* WTChartViewControler.m */; };
+		52089BF51CA2E70F00C1E6D6 /* WTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BF41CA2E70F00C1E6D6 /* WTHomeViewController.m */; };
+		52089BF81CA2E72200C1E6D6 /* WTPersoanlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BF71CA2E72200C1E6D6 /* WTPersoanlViewController.m */; };
+		520B24921CD053E700F06B73 /* WTHomeTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B24911CD053E700F06B73 /* WTHomeTableViewHeaderView.m */; };
+		520B24961CD0545E00F06B73 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B24951CD0545E00F06B73 /* Mediator.m */; };
+		520B249A1CD08F5A00F06B73 /* WTBalanceRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B24991CD08F5A00F06B73 /* WTBalanceRecordCell.m */; };
+		68DA86421CD8A0B3000473C5 /* TWCategorys.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DA863F1CD8A0B3000473C5 /* TWCategorys.m */; };
+		68DA86431CD8A0B3000473C5 /* TWRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DA86411CD8A0B3000473C5 /* TWRecord.m */; };
 		68FBCA6D1CA2DEB300BCD485 /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA691CA2DEB300BCD485 /* WTAppDelegate.m */; };
 		68FBCA6E1CA2DEB300BCD485 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA6A1CA2DEB300BCD485 /* main.m */; };
 		68FBCA6F1CA2DEB300BCD485 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA6C1CA2DEB300BCD485 /* ViewController.m */; };
@@ -65,6 +67,11 @@
 		520B24991CD08F5A00F06B73 /* WTBalanceRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTBalanceRecordCell.m; sourceTree = "<group>"; };
 		5894D8F429867757ABAADA29 /* libPods-Wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8BA0962AC8EDF3458A17A9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		68DA863C1CD8A04A000473C5 /* Wallet_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wallet_Prefix.pch; sourceTree = "<group>"; };
+		68DA863E1CD8A0B3000473C5 /* TWCategorys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCategorys.h; sourceTree = "<group>"; };
+		68DA863F1CD8A0B3000473C5 /* TWCategorys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCategorys.m; sourceTree = "<group>"; };
+		68DA86401CD8A0B3000473C5 /* TWRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRecord.h; sourceTree = "<group>"; };
+		68DA86411CD8A0B3000473C5 /* TWRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRecord.m; sourceTree = "<group>"; };
 		68FBCA681CA2DEB300BCD485 /* WTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAppDelegate.h; sourceTree = "<group>"; };
 		68FBCA691CA2DEB300BCD485 /* WTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAppDelegate.m; sourceTree = "<group>"; };
 		68FBCA6A1CA2DEB300BCD485 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -126,6 +133,7 @@
 		52089B891CA1808000C1E6D6 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				68DA863D1CD8A0B3000473C5 /* Model */,
 				520B24931CD0544700F06B73 /* Mediator */,
 				52089BD71CA2E56000C1E6D6 /* Cache */,
 				52089BD81CA2E56000C1E6D6 /* Defines */,
@@ -342,6 +350,17 @@
 			path = Mediator;
 			sourceTree = "<group>";
 		};
+		68DA863D1CD8A0B3000473C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68DA863E1CD8A0B3000473C5 /* TWCategorys.h */,
+				68DA863F1CD8A0B3000473C5 /* TWCategorys.m */,
+				68DA86401CD8A0B3000473C5 /* TWRecord.h */,
+				68DA86411CD8A0B3000473C5 /* TWRecord.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		68FBCA671CA2DEB300BCD485 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +370,7 @@
 				52089BDB1CA2E5D000C1E6D6 /* WTMainViewController.h */,
 				52089BDC1CA2E5D000C1E6D6 /* WTMainViewController.m */,
 				68FBCA6A1CA2DEB300BCD485 /* main.m */,
+				68DA863C1CD8A04A000473C5 /* Wallet_Prefix.pch */,
 				68FBCA6B1CA2DEB300BCD485 /* ViewController.h */,
 				68FBCA6C1CA2DEB300BCD485 /* ViewController.m */,
 			);
@@ -508,8 +528,10 @@
 				52089BF81CA2E72200C1E6D6 /* WTPersoanlViewController.m in Sources */,
 				52089BDD1CA2E5D000C1E6D6 /* WTMainViewController.m in Sources */,
 				520612071CD1B0A300B2892E /* WTAccountingViewController.m in Sources */,
+				68DA86431CD8A0B3000473C5 /* TWRecord.m in Sources */,
 				52089BF21CA2E70100C1E6D6 /* WTChartViewControler.m in Sources */,
 				68FBCA6F1CA2DEB300BCD485 /* ViewController.m in Sources */,
+				68DA86421CD8A0B3000473C5 /* TWCategorys.m in Sources */,
 				520B24961CD0545E00F06B73 /* Mediator.m in Sources */,
 				68FBCA6E1CA2DEB300BCD485 /* main.m in Sources */,
 				68FBCA6D1CA2DEB300BCD485 /* WTAppDelegate.m in Sources */,
@@ -639,6 +661,8 @@
 			baseConfigurationReference = 4FD3B3F1786041816FA1E288 /* Pods-Wallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Wallet/Main/Wallet_Prefix.pch;
 				INFOPLIST_FILE = Wallet/Main/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -652,6 +676,8 @@
 			baseConfigurationReference = D1B86851D960D3BFA2502839 /* Pods-Wallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Wallet/Main/Wallet_Prefix.pch;
 				INFOPLIST_FILE = Wallet/Main/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
