@@ -109,9 +109,6 @@ static NSString *kWTBalanceRecordCellIdentifer = @"kWTBalanceRecordCellIdentifer
     return NO;
 }
 
-- (BOOL)hidesBottomBarWhenPushed {
-    return YES;
-}
 #pragma mark - getters and setters
 - (UITableView *)tableView {
     if (!_tableView) {

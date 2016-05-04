@@ -31,12 +31,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
     self.viewControllers = @[self.homeNavigationController, self.chartNavigationController, self.personalNavigationController];
     
     self.homeNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"收支"
@@ -44,13 +38,16 @@
                                                                      selectedImage:[UIImage imageNamed:@"account_selected"]];
     
     self.chartNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"图表"
-                                                                             image:[UIImage imageNamed:@"chart_select"]
-                                                                     selectedImage:[UIImage imageNamed:@"chart_selected"]];
+                                                                              image:[UIImage imageNamed:@"chart_select"]
+                                                                      selectedImage:[UIImage imageNamed:@"chart_selected"]];
     
     self.personalNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我"
-                                                                             image:[UIImage imageNamed:@"profile_select"]
-                                                                     selectedImage:[UIImage imageNamed:@"profile_selected"]];
-    
+                                                                                 image:[UIImage imageNamed:@"profile_select"]
+                                                                         selectedImage:[UIImage imageNamed:@"profile_selected"]];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
