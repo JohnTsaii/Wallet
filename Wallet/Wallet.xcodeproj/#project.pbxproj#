@@ -22,8 +22,17 @@
 		52110C0D1CD87A39006D36D3 /* WTNumberKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 52110C0C1CD87A39006D36D3 /* WTNumberKeyBoard.m */; settings = {ASSET_TAGS = (); }; };
 		52110C101CD87CA4006D36D3 /* WTNumberKeyBoardBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52110C0F1CD87CA4006D36D3 /* WTNumberKeyBoardBackgroundView.m */; settings = {ASSET_TAGS = (); }; };
 		52110C131CD87CC9006D36D3 /* WTNumberKeyBoardContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52110C121CD87CC9006D36D3 /* WTNumberKeyBoardContainerView.m */; settings = {ASSET_TAGS = (); }; };
-        68DA86421CD8A0B3000473C5 /* TWCategorys.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DA863F1CD8A0B3000473C5 /* TWCategorys.m */; };
-        68DA86431CD8A0B3000473C5 /* TWRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DA86411CD8A0B3000473C5 /* TWRecord.m */; };
+=======
+		52089BDD1CA2E5D000C1E6D6 /* WTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BDC1CA2E5D000C1E6D6 /* WTMainViewController.m */; };
+		52089BF21CA2E70100C1E6D6 /* WTChartViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BF11CA2E70100C1E6D6 /* WTChartViewControler.m */; };
+		52089BF51CA2E70F00C1E6D6 /* WTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BF41CA2E70F00C1E6D6 /* WTHomeViewController.m */; };
+		52089BF81CA2E72200C1E6D6 /* WTPersoanlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52089BF71CA2E72200C1E6D6 /* WTPersoanlViewController.m */; };
+		520B24921CD053E700F06B73 /* WTHomeTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B24911CD053E700F06B73 /* WTHomeTableViewHeaderView.m */; };
+		520B24961CD0545E00F06B73 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B24951CD0545E00F06B73 /* Mediator.m */; };
+		520B249A1CD08F5A00F06B73 /* WTBalanceRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B24991CD08F5A00F06B73 /* WTBalanceRecordCell.m */; };
+		68DA86421CD8A0B3000473C5 /* TWCategorys.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DA863F1CD8A0B3000473C5 /* TWCategorys.m */; };
+		68DA86431CD8A0B3000473C5 /* TWRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DA86411CD8A0B3000473C5 /* TWRecord.m */; };
+>>>>>>> db45e5f5ce1fcf40d7f33e0d761afbfe95aeef73
 		68FBCA6D1CA2DEB300BCD485 /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA691CA2DEB300BCD485 /* WTAppDelegate.m */; };
 		68FBCA6E1CA2DEB300BCD485 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA6A1CA2DEB300BCD485 /* main.m */; };
 		68FBCA6F1CA2DEB300BCD485 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA6C1CA2DEB300BCD485 /* ViewController.m */; };
@@ -360,6 +369,7 @@
 			path = Mediator;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		52110C0A1CD87A39006D36D3 /* WTNumberKeyBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,8 +381,7 @@
 				52110C121CD87CC9006D36D3 /* WTNumberKeyBoardContainerView.m */,
 			);
 			path = WTNumberKeyBoard;
-            sourceTree = "<group>";
-        };
+=======
 		68DA863D1CD8A0B3000473C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +391,7 @@
 				68DA86411CD8A0B3000473C5 /* TWRecord.m */,
 			);
 			path = Model;
+>>>>>>> db45e5f5ce1fcf40d7f33e0d761afbfe95aeef73
 			sourceTree = "<group>";
 		};
 		68FBCA671CA2DEB300BCD485 /* Main */ = {
@@ -555,8 +565,11 @@
 				68DA86431CD8A0B3000473C5 /* TWRecord.m in Sources */,
 				52089BF21CA2E70100C1E6D6 /* WTChartViewControler.m in Sources */,
 				68FBCA6F1CA2DEB300BCD485 /* ViewController.m in Sources */,
+
 				52110C101CD87CA4006D36D3 /* WTNumberKeyBoardBackgroundView.m in Sources */,
+=======
 				68DA86421CD8A0B3000473C5 /* TWCategorys.m in Sources */,
+>>>>>>> db45e5f5ce1fcf40d7f33e0d761afbfe95aeef73
 				520B24961CD0545E00F06B73 /* Mediator.m in Sources */,
 				68FBCA6E1CA2DEB300BCD485 /* main.m in Sources */,
 				52110C0D1CD87A39006D36D3 /* WTNumberKeyBoard.m in Sources */,
