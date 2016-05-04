@@ -33,7 +33,6 @@ static NSString *kWTBalanceRecordCellIdentifer = @"kWTBalanceRecordCellIdentifer
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self.tableView registerClass:[WTBalanceRecordCell class] forCellReuseIdentifier:kWTBalanceRecordCellIdentifer];
 }
 
@@ -101,6 +100,7 @@ static NSString *kWTBalanceRecordCellIdentifer = @"kWTBalanceRecordCellIdentifer
 #pragma mark - event response
 - (void)tapHeaderView:(UIGestureRecognizer *)gestureRecognizer {
     WTAccountingViewController *accountingViewController = [[WTAccountingViewController alloc] init];
+    accountingViewController.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:accountingViewController animated:YES];
 }
 
