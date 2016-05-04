@@ -19,6 +19,9 @@
 		520B24921CD053E700F06B73 /* WTHomeTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B24911CD053E700F06B73 /* WTHomeTableViewHeaderView.m */; settings = {ASSET_TAGS = (); }; };
 		520B24961CD0545E00F06B73 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B24951CD0545E00F06B73 /* Mediator.m */; settings = {ASSET_TAGS = (); }; };
 		520B249A1CD08F5A00F06B73 /* WTBalanceRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B24991CD08F5A00F06B73 /* WTBalanceRecordCell.m */; settings = {ASSET_TAGS = (); }; };
+		52110C0D1CD87A39006D36D3 /* WTNumberKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 52110C0C1CD87A39006D36D3 /* WTNumberKeyBoard.m */; settings = {ASSET_TAGS = (); }; };
+		52110C101CD87CA4006D36D3 /* WTNumberKeyBoardBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52110C0F1CD87CA4006D36D3 /* WTNumberKeyBoardBackgroundView.m */; settings = {ASSET_TAGS = (); }; };
+		52110C131CD87CC9006D36D3 /* WTNumberKeyBoardContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52110C121CD87CC9006D36D3 /* WTNumberKeyBoardContainerView.m */; settings = {ASSET_TAGS = (); }; };
 		68FBCA6D1CA2DEB300BCD485 /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA691CA2DEB300BCD485 /* WTAppDelegate.m */; };
 		68FBCA6E1CA2DEB300BCD485 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA6A1CA2DEB300BCD485 /* main.m */; };
 		68FBCA6F1CA2DEB300BCD485 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA6C1CA2DEB300BCD485 /* ViewController.m */; };
@@ -63,6 +66,12 @@
 		520B24971CD0547C00F06B73 /* WTGlobalMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTGlobalMacro.h; sourceTree = "<group>"; };
 		520B24981CD08F5A00F06B73 /* WTBalanceRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTBalanceRecordCell.h; sourceTree = "<group>"; };
 		520B24991CD08F5A00F06B73 /* WTBalanceRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTBalanceRecordCell.m; sourceTree = "<group>"; };
+		52110C0B1CD87A39006D36D3 /* WTNumberKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTNumberKeyBoard.h; sourceTree = "<group>"; };
+		52110C0C1CD87A39006D36D3 /* WTNumberKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTNumberKeyBoard.m; sourceTree = "<group>"; };
+		52110C0E1CD87CA4006D36D3 /* WTNumberKeyBoardBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTNumberKeyBoardBackgroundView.h; sourceTree = "<group>"; };
+		52110C0F1CD87CA4006D36D3 /* WTNumberKeyBoardBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTNumberKeyBoardBackgroundView.m; sourceTree = "<group>"; };
+		52110C111CD87CC9006D36D3 /* WTNumberKeyBoardContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTNumberKeyBoardContainerView.h; sourceTree = "<group>"; };
+		52110C121CD87CC9006D36D3 /* WTNumberKeyBoardContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTNumberKeyBoardContainerView.m; sourceTree = "<group>"; };
 		5894D8F429867757ABAADA29 /* libPods-Wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8BA0962AC8EDF3458A17A9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FBCA681CA2DEB300BCD485 /* WTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAppDelegate.h; sourceTree = "<group>"; };
@@ -277,6 +286,7 @@
 		52089BE91CA2E6BF00C1E6D6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				52110C0A1CD87A39006D36D3 /* WTNumberKeyBoard */,
 				520B24901CD053E700F06B73 /* WTHomeTableViewHeaderView.h */,
 				520B24911CD053E700F06B73 /* WTHomeTableViewHeaderView.m */,
 				520B24981CD08F5A00F06B73 /* WTBalanceRecordCell.h */,
@@ -340,6 +350,19 @@
 				520B24951CD0545E00F06B73 /* Mediator.m */,
 			);
 			path = Mediator;
+			sourceTree = "<group>";
+		};
+		52110C0A1CD87A39006D36D3 /* WTNumberKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				52110C0B1CD87A39006D36D3 /* WTNumberKeyBoard.h */,
+				52110C0C1CD87A39006D36D3 /* WTNumberKeyBoard.m */,
+				52110C0E1CD87CA4006D36D3 /* WTNumberKeyBoardBackgroundView.h */,
+				52110C0F1CD87CA4006D36D3 /* WTNumberKeyBoardBackgroundView.m */,
+				52110C111CD87CC9006D36D3 /* WTNumberKeyBoardContainerView.h */,
+				52110C121CD87CC9006D36D3 /* WTNumberKeyBoardContainerView.m */,
+			);
+			path = WTNumberKeyBoard;
 			sourceTree = "<group>";
 		};
 		68FBCA671CA2DEB300BCD485 /* Main */ = {
@@ -505,13 +528,16 @@
 				52089BF51CA2E70F00C1E6D6 /* WTHomeViewController.m in Sources */,
 				520B24921CD053E700F06B73 /* WTHomeTableViewHeaderView.m in Sources */,
 				520B249A1CD08F5A00F06B73 /* WTBalanceRecordCell.m in Sources */,
+				52110C131CD87CC9006D36D3 /* WTNumberKeyBoardContainerView.m in Sources */,
 				52089BF81CA2E72200C1E6D6 /* WTPersoanlViewController.m in Sources */,
 				52089BDD1CA2E5D000C1E6D6 /* WTMainViewController.m in Sources */,
 				520612071CD1B0A300B2892E /* WTAccountingViewController.m in Sources */,
 				52089BF21CA2E70100C1E6D6 /* WTChartViewControler.m in Sources */,
 				68FBCA6F1CA2DEB300BCD485 /* ViewController.m in Sources */,
+				52110C101CD87CA4006D36D3 /* WTNumberKeyBoardBackgroundView.m in Sources */,
 				520B24961CD0545E00F06B73 /* Mediator.m in Sources */,
 				68FBCA6E1CA2DEB300BCD485 /* main.m in Sources */,
+				52110C0D1CD87A39006D36D3 /* WTNumberKeyBoard.m in Sources */,
 				68FBCA6D1CA2DEB300BCD485 /* WTAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,6 +11,7 @@
 // views
 #import "WTHomeTableViewHeaderView.h"
 #import "WTBalanceRecordCell.h"
+#import "WTAccountingViewController.h"
 
 // define
 #import "WTGlobalMacro.h"
@@ -99,12 +100,17 @@ static NSString *kWTBalanceRecordCellIdentifer = @"kWTBalanceRecordCellIdentifer
 
 #pragma mark - event response
 - (void)tapHeaderView:(UIGestureRecognizer *)gestureRecognizer {
-    NSLog(@"%s",__func__);
+    WTAccountingViewController *accountingViewController = [[WTAccountingViewController alloc] init];
+    [self.navigationController pushViewController:accountingViewController animated:YES];
 }
 
 #pragma mark - private method
 - (BOOL)prefersStatusBarHidden {
     return NO;
+}
+
+- (BOOL)hidesBottomBarWhenPushed {
+    return YES;
 }
 #pragma mark - getters and setters
 - (UITableView *)tableView {
