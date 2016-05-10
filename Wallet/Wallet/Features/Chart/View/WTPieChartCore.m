@@ -12,7 +12,13 @@
 {
     NSInteger _currIndex;
     CGPoint _centerPoint;
-    CGPoint _beginPoint;
+    
+    NSTimeInterval _lastPreTime;
+    NSTimeInterval _moveTime;
+    NSTimeInterval _endTime;
+    
+    CGFloat _velocity;
+    NSTimer *_timer;
 }
 @end
 
@@ -44,11 +50,12 @@
 - (void)createArcWithColor:(UIColor *)color ctx:(CGContextRef)ctx rect:(CGRect)rect begin:(CGFloat)begin delta:(CGFloat)delta
 {
     CGFloat size = MIN(rect.size.height, rect.size.width);
+    CGPoint center = CGPointMake(rect.size.width/2, rect.size.height/2);
     CGFloat radius = size / 2;
     
     CGMutablePathRef path = CGPathCreateMutable();
-    CGPathAddRelativeArc(path, nil, radius, radius, radius, begin, delta);
-    CGPathAddLineToPoint(path, nil, radius, radius);
+    CGPathAddRelativeArc(path, nil, center.x, center.y, radius, begin, delta);
+    CGPathAddLineToPoint(path, nil, center.x, center.y);
     
     [color setFill];
     CGContextSetLineWidth(ctx, 1);
@@ -61,34 +68,68 @@
 #pragma mark - touches
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    UITouch *touch = touches.anyObject;
-    _beginPoint = [touch locationInView:self.superview];
-    
+    [_timer invalidate];
+    _lastPreTime = [[NSDate date] timeIntervalSince1970];
 }
+
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
+    if (_moveTime != 0) {
+        _lastPreTime = _moveTime;
+    }
+    _moveTime = [[NSDate date] timeIntervalSince1970];
     UITouch *touch = touches.anyObject;
-    CGPoint moved = [touch locationInView:self.superview];
+    CGPoint currentPoint = [touch locationInView:self.superview];
+    CGPoint prePoint = [touch previousLocationInView:self.superview];
     
     //calculate angle
     //余弦定理
     CGFloat a = 0, b = 0, c = 0, y = 0;
-    a = sqrt((_beginPoint.x - moved.x) * (_beginPoint.x - moved.x) + (_beginPoint.y - moved.y) * (_beginPoint.y - moved.y));
-    b = sqrt((_centerPoint.x - moved.x) * (_centerPoint.x - moved.x) + (_centerPoint.y - moved.y) * (_centerPoint.y - moved.y));
-    c = sqrt((_beginPoint.x - _centerPoint.x) * (_beginPoint.x - _centerPoint.x) + (_beginPoint.y - _centerPoint.y) * (_beginPoint.y - _centerPoint.y));
+    a = sqrt((prePoint.x - currentPoint.x) * (prePoint.x - currentPoint.x) + (prePoint.y - currentPoint.y) * (prePoint.y - currentPoint.y));
+    b = sqrt((_centerPoint.x - currentPoint.x) * (_centerPoint.x - currentPoint.x) + (_centerPoint.y - currentPoint.y) * (_centerPoint.y - currentPoint.y));
+    c = sqrt((prePoint.x - _centerPoint.x) * (prePoint.x - _centerPoint.x) + (prePoint.y - _centerPoint.y) * (prePoint.y - _centerPoint.y));
     y = (b * b + c * c  - a * a) / 2 / b / c;
     
     CGFloat angle = acos(y);
-    CGFloat x = [self crossCenter:_centerPoint begin:_beginPoint moved:moved];
-    angle = x > 0 ? angle : - angle;
-    [self changeAngle:angle];
+    CGFloat x = [self crossCenter:_centerPoint begin:prePoint moved:currentPoint];
+     angle = x > 0 ?  angle : -  angle;
+    [self changeAngle: angle];
     
-    _beginPoint = moved;
+    _velocity = angle / (_moveTime - _lastPreTime);
 }
+
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{}
+{
+    _endTime = [[NSDate date] timeIntervalSince1970];
+    if (_endTime - _moveTime > 0.02) {
+        return;
+    }
+    
+    NSMutableDictionary *userinfo = @{@"v":@(_velocity),@"clockwise":@(_velocity>0?YES:NO)}.mutableCopy;
+    _timer = [NSTimer scheduledTimerWithTimeInterval:0.025 target:self selector:@selector(step:) userInfo:userinfo repeats:YES];
+    
+}
 - (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {}
+
+- (void)step:(NSTimer *)timer
+{
+    CGFloat cvelocity = [timer.userInfo[@"v"] floatValue];
+    bool clockwise = [timer.userInfo[@"clockwise"] boolValue];
+    CGFloat s = cvelocity * 0.025;
+    cvelocity = cvelocity -  _velocity * 0.04;
+    
+    if (clockwise && cvelocity < 0) {
+        [timer invalidate];
+        return;
+    }
+    else if (!clockwise && cvelocity > 0){
+        [timer invalidate];
+        return;
+    }
+    [timer.userInfo setObject:@(cvelocity) forKey:@"v"];
+    [self changeAngle:s];
+}
 
 - (void)changeAngle:(CGFloat)angle
 {

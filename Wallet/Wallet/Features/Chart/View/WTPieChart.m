@@ -41,7 +41,6 @@ const float __beginAngle = M_PI_2; //M_PI为一个半圆，0表示在3点钟位�
         _indicator.translatesAutoresizingMaskIntoConstraints = NO;
         _indicator.backgroundColor = [UIColor blackColor];
         [self addSubview:_indicator];
-        
 
         //layout
         NSMutableArray *cons = @[].mutableCopy;
