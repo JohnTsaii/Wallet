@@ -27,6 +27,8 @@
 		684C7CBC1CDC9227006BD938 /* WTPieChartCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 684C7CBB1CDC9227006BD938 /* WTPieChartCore.m */; };
 		68DA86421CD8A0B3000473C5 /* TWCategorys.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DA863F1CD8A0B3000473C5 /* TWCategorys.m */; };
 		68DA86431CD8A0B3000473C5 /* TWRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DA86411CD8A0B3000473C5 /* TWRecord.m */; };
+		68E3268D1CE1BD8D000E9401 /* WTPieChartCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E3268C1CE1BD8D000E9401 /* WTPieChartCover.m */; };
+		68E326901CE1BEEC000E9401 /* WTPieChartTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E3268F1CE1BEEC000E9401 /* WTPieChartTriangle.m */; };
 		68FBCA6D1CA2DEB300BCD485 /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA691CA2DEB300BCD485 /* WTAppDelegate.m */; };
 		68FBCA6E1CA2DEB300BCD485 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA6A1CA2DEB300BCD485 /* main.m */; };
 		68FBCA6F1CA2DEB300BCD485 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FBCA6C1CA2DEB300BCD485 /* ViewController.m */; };
@@ -86,6 +88,10 @@
 		68DA863F1CD8A0B3000473C5 /* TWCategorys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCategorys.m; sourceTree = "<group>"; };
 		68DA86401CD8A0B3000473C5 /* TWRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRecord.h; sourceTree = "<group>"; };
 		68DA86411CD8A0B3000473C5 /* TWRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRecord.m; sourceTree = "<group>"; };
+		68E3268B1CE1BD8D000E9401 /* WTPieChartCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTPieChartCover.h; sourceTree = "<group>"; };
+		68E3268C1CE1BD8D000E9401 /* WTPieChartCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTPieChartCover.m; sourceTree = "<group>"; };
+		68E3268E1CE1BEEC000E9401 /* WTPieChartTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTPieChartTriangle.h; sourceTree = "<group>"; };
+		68E3268F1CE1BEEC000E9401 /* WTPieChartTriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTPieChartTriangle.m; sourceTree = "<group>"; };
 		68FBCA681CA2DEB300BCD485 /* WTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAppDelegate.h; sourceTree = "<group>"; };
 		68FBCA691CA2DEB300BCD485 /* WTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAppDelegate.m; sourceTree = "<group>"; };
 		68FBCA6A1CA2DEB300BCD485 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -375,6 +381,10 @@
 			children = (
 				6827116F1CD9E2A500350FEC /* WTPieChart.h */,
 				682711701CD9E2A500350FEC /* WTPieChart.m */,
+				68E3268B1CE1BD8D000E9401 /* WTPieChartCover.h */,
+				68E3268C1CE1BD8D000E9401 /* WTPieChartCover.m */,
+				68E3268E1CE1BEEC000E9401 /* WTPieChartTriangle.h */,
+				68E3268F1CE1BEEC000E9401 /* WTPieChartTriangle.m */,
 				684C7CBA1CDC9227006BD938 /* WTPieChartCore.h */,
 				684C7CBB1CDC9227006BD938 /* WTPieChartCore.m */,
 				682711721CD9E3FA00350FEC /* WTPieChartPiece.h */,
@@ -579,7 +589,9 @@
 				52089BF81CA2E72200C1E6D6 /* WTPersoanlViewController.m in Sources */,
 				52089BDD1CA2E5D000C1E6D6 /* WTMainViewController.m in Sources */,
 				520612071CD1B0A300B2892E /* WTAccountingViewController.m in Sources */,
+				68E326901CE1BEEC000E9401 /* WTPieChartTriangle.m in Sources */,
 				68DA86431CD8A0B3000473C5 /* TWRecord.m in Sources */,
+				68E3268D1CE1BD8D000E9401 /* WTPieChartCover.m in Sources */,
 				52089BF21CA2E70100C1E6D6 /* WTChartViewControler.m in Sources */,
 				684C7CBC1CDC9227006BD938 /* WTPieChartCore.m in Sources */,
 				68FBCA6F1CA2DEB300BCD485 /* ViewController.m in Sources */,

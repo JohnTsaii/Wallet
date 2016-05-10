@@ -9,15 +9,18 @@
 #import "WTPieChart.h"
 #import "WTPieChartCore.h"
 #import "WTPieChartPiece.h"
+#import "WTPieChartCover.h"
 
 const float __beginAngle = M_PI_2; //M_PI为一个半圆，0表示在3点钟位置
 
 @interface WTPieChart ()
 <WTPieChartCoreDelegate>
 {
-    UIView *_indicator;
+    WTPieChartCover *_cover;
     CGFloat _total;
     WTPieChartCore *_coreVew;
+    
+    UILabel *_totalLb;
 }
 @end
 
@@ -36,25 +39,46 @@ const float __beginAngle = M_PI_2; //M_PI为一个半圆，0表示在3点钟位�
         _coreVew.delegate = self;
         _coreVew.translatesAutoresizingMaskIntoConstraints = NO;
         [self addSubview:_coreVew];
-        
-        _indicator = [[UIView alloc] initWithFrame:CGRectZero];
-        _indicator.translatesAutoresizingMaskIntoConstraints = NO;
-        _indicator.backgroundColor = [UIColor blackColor];
-        [self addSubview:_indicator];
 
+        _cover = [[WTPieChartCover alloc] initWithFrame:CGRectZero];
+        _cover.translatesAutoresizingMaskIntoConstraints = NO;
+        _cover.userInteractionEnabled = NO;
+        [self addSubview:_cover];
+        
+        _totalLb = [[UILabel alloc] initWithFrame:CGRectZero];
+        _totalLb.font = [UIFont boldSystemFontOfSize:16.f];
+        _totalLb.textColor = [UIColor whiteColor];
+        _totalLb.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.2];
+        _totalLb.userInteractionEnabled = NO;
+        _totalLb.translatesAutoresizingMaskIntoConstraints = NO;
+        _totalLb.clipsToBounds = YES;
+        _totalLb.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:_totalLb];
+        
         //layout
         NSMutableArray *cons = @[].mutableCopy;
-        NSDictionary *views = NSDictionaryOfVariableBindings(_coreVew,_indicator);
-        //--circle
-        [cons addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_coreVew]-0-|" options:0 metrics:nil views:views]];
-        [cons addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_coreVew]-0-|" options:0 metrics:nil views:views]];
-        //--indicator
-        [cons addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_indicator(==30)]-(-15)-|" options:0 metrics:nil views:views]];
-        [cons addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[_indicator(==2)]" options:0 metrics:nil views:views]];
-        [cons addObject:[NSLayoutConstraint constraintWithItem:_indicator attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+        NSDictionary *views = NSDictionaryOfVariableBindings(_coreVew,_cover,_totalLb);
+        //circle
+        [cons addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-10-[_coreVew]-10-|" options:0 metrics:nil views:views]];
+        [cons addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[_coreVew]-10-|" options:0 metrics:nil views:views]];
+        //cover
+        [cons addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_cover]-0-|" options:0 metrics:nil views:views]];
+        [cons addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_cover]-0-|" options:0 metrics:nil views:views]];
+        //_totalLb
+        [cons addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[_totalLb(==100)]" options:0 metrics:nil views:views]];
+        [cons addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_totalLb(==100)]" options:0 metrics:nil views:views]];
+        [cons addObject:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:_totalLb attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+        [cons addObject:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:_totalLb attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
+        
         [self addConstraints:cons];
     }
     return self;
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    _totalLb.layer.cornerRadius = CGRectGetWidth(_totalLb.frame)/2;
 }
 
 #pragma mark - setter
@@ -74,6 +98,7 @@ const float __beginAngle = M_PI_2; //M_PI为一个半圆，0表示在3点钟位�
         obj.value = [value floatValue];
         [pieces addObject:obj];
     };
+    _totalLb.text = [NSString stringWithFormat:@"%.2f",_total];
     
     WTPieChartPiece *pre;
     for (int i = 0; i < pieces.count; i++) {

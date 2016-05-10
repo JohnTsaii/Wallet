@@ -98,7 +98,6 @@
     
     NSMutableDictionary *userinfo = @{@"v":@(_velocity),@"clockwise":@(_velocity>0?YES:NO)}.mutableCopy;
     _timer = [NSTimer scheduledTimerWithTimeInterval:0.025 target:self selector:@selector(step:) userInfo:userinfo repeats:YES];
-    
 }
 - (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {}
