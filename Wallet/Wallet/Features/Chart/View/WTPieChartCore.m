@@ -11,7 +11,6 @@
 @interface WTPieChartCore ()
 {
     NSInteger _currIndex;
-    CGPoint _centerPoint;
     
     NSTimeInterval _lastPreTime;
     NSTimeInterval _moveTime;
@@ -36,7 +35,6 @@
 #pragma mark - draw
 - (void)drawRect:(CGRect)rect
 {
-    _centerPoint = CGPointMake(rect.size.width/2, rect.size.height/2);
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     NSArray<UIColor *> *colors = @[[UIColor redColor],[UIColor orangeColor],[UIColor yellowColor],[UIColor greenColor],[UIColor blueColor],[UIColor purpleColor]];
     CGFloat begin = self.beignAngle;
@@ -79,20 +77,13 @@
     }
     _moveTime = [[NSDate date] timeIntervalSince1970];
     UITouch *touch = touches.anyObject;
+    CGPoint center = CGPointMake(CGRectGetMidX([self bounds]), CGRectGetMidY([self bounds]));
     CGPoint currentPoint = [touch locationInView:self.superview];
     CGPoint prePoint = [touch previousLocationInView:self.superview];
     
     //calculate angle
-    //余弦定理
-    CGFloat a = 0, b = 0, c = 0, y = 0;
-    a = sqrt((prePoint.x - currentPoint.x) * (prePoint.x - currentPoint.x) + (prePoint.y - currentPoint.y) * (prePoint.y - currentPoint.y));
-    b = sqrt((_centerPoint.x - currentPoint.x) * (_centerPoint.x - currentPoint.x) + (_centerPoint.y - currentPoint.y) * (_centerPoint.y - currentPoint.y));
-    c = sqrt((prePoint.x - _centerPoint.x) * (prePoint.x - _centerPoint.x) + (prePoint.y - _centerPoint.y) * (prePoint.y - _centerPoint.y));
-    y = (b * b + c * c  - a * a) / 2 / b / c;
-    
-    CGFloat angle = acos(y);
-    CGFloat x = [self crossCenter:_centerPoint begin:prePoint moved:currentPoint];
-     angle = x > 0 ?  angle : -  angle;
+    //反正切函数
+    CGFloat angle = atan2f(currentPoint.y - center.y, currentPoint.x - center.x) - atan2f(prePoint.y - center.y, prePoint.x - center.x);
     [self changeAngle: angle];
     
     _velocity = angle / (_moveTime - _lastPreTime);
@@ -145,23 +136,6 @@
             }
         }
     }
-}
-
-/**
- *  计算向量乘积 :
-     知识点→
- *    设向量A = ( x1, y1 )，B = ( x2, y2 )
- *    |A×B| = x1*y2 - x2*y1 = |A|×|B|×sin(向量A到B的夹角)
- *    所以这个值的正负也就是A到B旋转角sin值的正负
- *    顺时针旋转角度0~180，sin>0
- *    顺时针旋转角度180~360或者说逆时针旋转0~180，sin<0
- */
-- (float)crossCenter:(CGPoint)center begin:(CGPoint)begin moved:(CGPoint)moved
-{
-    CGPoint a = CGPointMake(begin.x - center.x, begin.y - center.y);
-    CGPoint b = CGPointMake(moved.x - center.x, moved.y - center.y);
-    
-    return a.x * b.y - b.x * a.y;
 }
 
 @end
