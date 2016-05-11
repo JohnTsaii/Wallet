@@ -25,7 +25,7 @@
     
     //views
     _chart = [[WTPieChart alloc] initWithFrame:CGRectZero];
-    [_chart setValues:@[@(130),@(120),@(100),@(80),@(30)]];
+    [_chart setValues:@[@(30),@(30),@(30),@(30),@(30),@(30),@(30),@(30),@(30),@(30),@(30),@(30),@(30),@(30),@(30)]];
     _chart.backgroundColor = [UIColor whiteColor];
     _chart.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:_chart];

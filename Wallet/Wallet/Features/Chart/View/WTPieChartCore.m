@@ -36,12 +36,65 @@
 - (void)drawRect:(CGRect)rect
 {
     CGContextRef ctx = UIGraphicsGetCurrentContext();
-    NSArray<UIColor *> *colors = @[[UIColor redColor],[UIColor orangeColor],[UIColor yellowColor],[UIColor greenColor],[UIColor blueColor],[UIColor purpleColor]];
     CGFloat begin = self.beignAngle;
     for (WTPieChartPiece *obj in self.pieces) {
         NSInteger index = [self.pieces indexOfObject:obj];
-        [self createArcWithColor:colors[index] ctx:ctx rect:rect begin:begin delta:obj.delta];
+        [self createArcWithColor:[self colorWithIndex:index] ctx:ctx rect:rect begin:begin delta:obj.delta];
         begin += obj.delta;
+    }
+}
+
+- (UIColor *)colorWithIndex:(NSInteger)index
+{
+    switch (index) {
+        case 0:
+            return [UIColor colorWithRed:0.9 green:0 blue:0 alpha:1.0];
+            break;
+        case 1:
+            return [UIColor colorWithRed:1 green:0.5 blue:0 alpha:1.0];
+            break;
+        case 2:
+            return [UIColor colorWithRed:0.9 green:1 blue:0 alpha:1.0];
+            break;
+        case 3:
+            return [UIColor colorWithRed:0.4 green:1 blue:0 alpha:1.0];
+            break;
+        case 4:
+            return [UIColor colorWithRed:0 green:1 blue:0 alpha:1.0];
+            break;
+        case 5:
+            return [UIColor colorWithRed:0 green:1 blue:0.5 alpha:1.0];
+            break;
+        case 6:
+            return [UIColor colorWithRed:0 green:1 blue:1 alpha:1.0];
+            break;
+        case 7:
+            return [UIColor colorWithRed:0 green:0.5 blue:1 alpha:1.0];
+            break;
+        case 8:
+            return [UIColor colorWithRed:0 green:0 blue:1 alpha:1.0];
+            break;
+        case 9:
+            return [UIColor colorWithRed:0.5 green:0 blue:1 alpha:1.0];
+            break;
+        case 10:
+            return [UIColor colorWithRed:1 green:0 blue:1 alpha:1.0];
+            break;
+        case 11:
+            return [UIColor colorWithRed:1 green:0 blue:0.5 alpha:1.0];
+            break;
+        case 12:
+            return [UIColor colorWithRed:0.7 green:0.7 blue:0.7 alpha:1.0];
+            break;
+        case 13:
+            return [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1.0];
+            break;
+        case 14:
+            return [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:1.0];
+            break;
+        default:
+            return [UIColor colorWithRed:0.1 green:0.1 blue:0.1 alpha:1.0];
+            break;
     }
 }
 
